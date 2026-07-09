@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#2563eb">
 <title>vocab.ai - Vocabulary Revision for Government Exams</title>
 <style>
-:root{--bg:#f6f8ff;--bg-dark:#1a1a2e;--card:#fff;--card-dark:#2d2d44;--text:#111827;--text-dark:#f0f0f0;--muted:#5a6b7d;--muted-dark:#b0b0c0;--line:#e5e7eb;--line-dark:#3d3d5c;--blue:#2563eb;--green:#067647;--red:#b42318;--amber:#b54708}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;transition:background 200ms,color 200ms}body.dark-mode{--bg:var(--bg-dark);--card:var(--card-dark);--text:var(--text-dark);--muted:var(--muted-dark);--line:var(--line-dark)}@media(prefers-color-scheme:dark){body{--bg:var(--bg-dark);--card:var(--card-dark);--text:var(--text-dark);--muted:var(--muted-dark);--line:var(--line-dark)}}.wrap{max-width:900px;margin:0 auto;padding:20px}.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:20px;flex-wrap:wrap}.brand{font-size:24px;font-weight:700;color:var(--blue)}.brand span{color:var(--text)}.nav-actions{display:flex;gap:10px;flex-wrap:wrap}.nav-controls{display:flex;gap:10px;align-items:center}.theme-toggle{background:transparent;border:1px solid var(--line);color:var(--text);padding:6px 10px;font-size:16px;cursor:pointer;border-radius:6px;transition:all 150ms}@media(max-width:768px){.nav{flex-direction:column;align-items:flex-start}.nav-actions{width:100%}.nav-controls{width:100%}}.pill{padding:8px 16px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;cursor:pointer;font-size:14px;font-weight:500;transition:all 150ms ease}.pill:hover{border-color:var(--blue);background:rgba(37,99,235,0.05)}.pill.active{background:var(--blue);color:white;border-color:var(--blue)}.pill:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.1)}@media(max-width:600px){.pill{font-size:12px;padding:6px 12px}}.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;margin-bottom:20px;box-shadow:0 1px 2px rgba(0,0,0,0.05)}.stack>div{margin-bottom:20px}.stack>div:last-child{margin-bottom:0}label{display:block;margin-bottom:8px;font-weight:600;color:var(--text)}input[type="text"],input[type="search"]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;font-size:14px;font-family:inherit;transition:all 150ms ease;background:var(--card);color:var(--text)}input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.1)}input::placeholder{color:var(--muted)}.ai-note{margin:8px 0 0;font-size:12px;color:var(--muted)}.row{display:flex;gap:10px;flex-wrap:wrap}@media(max-width:480px){.row{flex-direction:column}.row button{width:100%}}button{padding:10px 16px;border:1px solid var(--blue);background:var(--blue);color:white;border-radius:6px;cursor:pointer;font-size:14px;font-weight:500;transition:all 150ms ease;font-family:inherit}button:hover:not(:disabled){background:#1d4ed8;border-color:#1d4ed8}button:focus{outline:none;box-shadow:0 0 0 3px rgba(37,99,235,0.1)}button:disabled{opacity:0.6;cursor:not-allowed}button.secondary{background:transparent;color:var(--blue);border-color:var(--blue)}button.secondary:hover:not(:disabled){background:rgba(37,99,235,0.1)}.status{padding:10px 12px;border-radius:6px;font-size:14px;margin-top:10px;transition:opacity 300ms ease;min-height:20px}.status.ok{background:rgba(6,118,71,0.1);color:var(--green);border:1px solid rgba(6,118,71,0.3)}.status.err{background:rgba(180,35,24,0.1);color:var(--red);border:1px solid rgba(180,35,24,0.3)}.status.warn{background:rgba(181,71,8,0.1);color:var(--amber);border:1px solid rgba(181,71,8,0.3)}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}@media(max-width:600px){.results{grid-template-columns:1fr}}.box{background:rgba(37,99,235,0.03);border:1px solid var(--line);border-radius:6px;padding:12px;position:relative}.box-title{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;margin-bottom:6px;letter-spacing:0.5px}.box-value{font-size:14px;color:var(--text);line-height:1.6;word-break:break-word}.copy-btn{position:absolute;top:8px;right:8px;padding:4px 8px;font-size:11px;background:rgba(37,99,235,0.1);border:none;color:var(--blue);border-radius:4px;cursor:pointer;opacity:0;transition:opacity 150ms}@media(hover:hover){.box:hover .copy-btn{opacity:1}}.meaning{font-style:italic}.history{margin-top:40px}.history-controls{display:flex;gap:10px;margin-bottom:15px;flex-wrap:wrap}#filter-history{flex:1;min-width:200px}@media(max-width:600px){.history-controls{flex-direction:column}#filter-history{width:100%}}.history-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px}@media(max-width:600px){.history-head{flex-direction:column;align-items:flex-start}}.history-head h2{margin:0;color:var(--text);font-size:18px}.hint{margin:4px 0 0;font-size:12px;color:var(--muted)}.stats{padding:10px;background:rgba(37,99,235,0.05);border-radius:6px;font-size:12px;color:var(--muted);margin-bottom:10px}.history-list{display:flex;flex-direction:column;gap:10px;max-height:400px;overflow-y:auto}.history-item{display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(37,99,235,0.02);border:1px solid var(--line);border-radius:6px;transition:all 150ms ease}@media(max-width:600px){.history-item{flex-direction:column;align-items:flex-start;gap:10px}}.history-item:hover{background:rgba(37,99,235,0.05);border-color:var(--blue)}.history-item>div{flex:1}.history-term{font-weight:600;color:var(--text);margin-bottom:6px}.history-meta{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}.history-btn{padding:6px 12px;font-size:12px;background:transparent;color:var(--red);border-color:var(--red)}@media(max-width:600px){.history-btn{width:100%}}.empty{padding:20px;text-align:center;color:var(--muted);background:rgba(37,99,235,0.03);border-radius:6px;border:1px dashed var(--line)}.empty p{margin:8px 0}.empty p:first-child{font-size:24px;margin-top:0}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(37,99,235,0.3);border-top-color:var(--blue);border-radius:50%;animation:spin 0.8s linear infinite;margin-right:6px;vertical-align:middle}.kbd{display:inline-block;padding:2px 6px;background:var(--line);border-radius:3px;font-size:11px;font-family:monospace;color:var(--text)}
+:root{--bg:#f6f8ff;--bg-dark:#1a1a2e;--card:#fff;--card-dark:#2d2d44;--text:#111827;--text-dark:#f0f0f0;--muted:#5a6b7d;--muted-dark:#b0b0c0;--line:#e5e7eb;--line-dark:#3d3d5c;--blue:#2563eb;--green:#067647;--red:#b42318;--amber:#b54708}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;transition:background 200ms,color 200ms}body.dark-mode{--bg:var(--bg-dark);--card:var(--card-dark);--text:var(--text-dark);--muted:var(--muted-dark);--line:var(--line-dark)}@media(prefers-color-scheme:dark){body{--bg:var(--bg-dark);--card:var(--card-dark);--text:var(--text-dark);--muted:var(--muted-dark);--line:var(--line-dark)}}.wrap{max-width:900px;margin:0 auto;padding:20px}.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:20px;flex-wrap:wrap}.brand{font-size:24px;font-weight:700;color:var(--blue)}.brand span{color:var(--text)}.nav-actions{display:flex;gap:10px;flex-wrap:wrap}.nav-controls{display:flex;gap:10px;align-items:center}.theme-toggle{background:transparent;border:1px solid var(--line);color:var(--text);padding:6px 10px;font-size:16px;cursor:pointer;border-radius:6px;transition:all 150ms;user-select:none}.theme-toggle:hover{border-color:var(--blue)}.pill{padding:8px 16px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;cursor:pointer;font-size:14px;font-weight:500;transition:all 150ms ease;user-select:none}.pill:hover{border-color:var(--blue);background:rgba(37,99,235,0.05)}.pill.active{background:var(--blue);color:white;border-color:var(--blue)}.pill:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.1)}@media(max-width:600px){.pill{font-size:12px;padding:6px 12px}}.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;margin-bottom:20px;box-shadow:0 1px 2px rgba(0,0,0,0.05)}.stack>div{margin-bottom:20px}.stack>div:last-child{margin-bottom:0}label{display:block;margin-bottom:8px;font-weight:600;color:var(--text)}input[type="text"],input[type="search"]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;font-size:14px;font-family:inherit;transition:all 150ms ease;background:var(--card);color:var(--text)}input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.1)}input::placeholder{color:var(--muted)}.ai-note{margin:8px 0 0;font-size:12px;color:var(--muted)}.row{display:flex;gap:10px;flex-wrap:wrap}@media(max-width:480px){.row{flex-direction:column}.row button{width:100%}}button{padding:10px 16px;border:1px solid var(--blue);background:var(--blue);color:white;border-radius:6px;cursor:pointer;font-size:14px;font-weight:500;transition:all 150ms ease;font-family:inherit;user-select:none}button:hover:not(:disabled){background:#1d4ed8;border-color:#1d4ed8}button:focus{outline:none;box-shadow:0 0 0 3px rgba(37,99,235,0.1)}button:disabled{opacity:0.6;cursor:not-allowed}button.secondary{background:transparent;color:var(--blue);border-color:var(--blue)}button.secondary:hover:not(:disabled){background:rgba(37,99,235,0.1)}.status{padding:10px 12px;border-radius:6px;font-size:14px;margin-top:10px;transition:opacity 300ms ease;min-height:20px}.status.ok{background:rgba(6,118,71,0.1);color:var(--green);border:1px solid rgba(6,118,71,0.3)}.status.err{background:rgba(180,35,24,0.1);color:var(--red);border:1px solid rgba(180,35,24,0.3)}.status.warn{background:rgba(181,71,8,0.1);color:var(--amber);border:1px solid rgba(181,71,8,0.3)}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}@media(max-width:600px){.results{grid-template-columns:1fr}}.box{background:rgba(37,99,235,0.03);border:1px solid var(--line);border-radius:6px;padding:12px;position:relative}.box-title{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;margin-bottom:6px;letter-spacing:0.5px}.box-value{font-size:14px;color:var(--text);line-height:1.6;word-break:break-word;margin:0}.copy-btn{position:absolute;top:8px;right:8px;padding:4px 8px;font-size:11px;background:rgba(37,99,235,0.1);border:none;color:var(--blue);border-radius:4px;cursor:pointer;opacity:0;transition:opacity 150ms;user-select:none}@media(hover:hover){.box:hover .copy-btn{opacity:1}}.meaning{font-style:italic}.history{margin-top:40px}.history-controls{display:flex;gap:10px;margin-bottom:15px;flex-wrap:wrap}#filter-history{flex:1;min-width:200px}@media(max-width:600px){.history-controls{flex-direction:column}#filter-history{width:100%}}.history-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px}@media(max-width:600px){.history-head{flex-direction:column;align-items:flex-start}}.history-head h2{margin:0;color:var(--text);font-size:18px}.hint{margin:4px 0 0;font-size:12px;color:var(--muted)}.stats{padding:10px;background:rgba(37,99,235,0.05);border-radius:6px;font-size:12px;color:var(--muted);margin-bottom:10px}.history-list{display:flex;flex-direction:column;gap:10px;max-height:400px;overflow-y:auto}.history-item{display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(37,99,235,0.02);border:1px solid var(--line);border-radius:6px;transition:all 150ms ease}@media(max-width:600px){.history-item{flex-direction:column;align-items:flex-start;gap:10px}}.history-item:hover{background:rgba(37,99,235,0.05);border-color:var(--blue)}.history-item>div{flex:1}.history-term{font-weight:600;color:var(--text);margin-bottom:6px}.history-meta{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}.history-btn{padding:6px 12px;font-size:12px;background:transparent;color:var(--red);border-color:var(--red)}@media(max-width:600px){.history-btn{width:100%}}.empty{padding:20px;text-align:center;color:var(--muted);background:rgba(37,99,235,0.03);border-radius:6px;border:1px dashed var(--line)}.empty p{margin:8px 0}.empty p:first-child{font-size:24px;margin-top:0}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(37,99,235,0.3);border-top-color:var(--blue);border-radius:50%;animation:spin 0.8s linear infinite;margin-right:6px;vertical-align:middle}.kbd{display:inline-block;padding:2px 6px;background:var(--line);border-radius:3px;font-size:11px;font-family:monospace;color:var(--text)}
 </style>
 </head>
 <body>
@@ -26,12 +26,9 @@
   </div>
   <section class="card stack">
     <div>
-      <label for="term">
-        Word or phrase
-        <span class="hint" style="display:block;font-weight:normal;margin-top:4px">e.g., diligent, one word substitution</span>
-      </label>
+      <label for="term">Word or phrase<span class="hint">e.g., diligent, one word substitution</span></label>
       <input id="term" type="text" placeholder="Enter word or phrase" autocomplete="off" aria-label="Enter a word or phrase to generate vocabulary entry" minlength="1" maxlength="100">
-      <p class="ai-note">AI generation uses Firebase Cloud Function when deployed. Local lookup remains as fallback. <span class="kbd">Enter</span> to generate.</p>
+      <p class="ai-note">AI uses Firebase Cloud Function. Fallback to local lookup if unavailable. Press <span class="kbd">Enter</span> to generate.</p>
     </div>
     <div class="row">
       <button id="go" onclick="app.generateEntry()">Generate</button>
@@ -42,17 +39,25 @@
   </section>
   <section class="card">
     <div class="results">
-      <div class="box"><div class="box-title">Section</div><div class="box-value" id="rMode">-</div><button class="copy-btn" onclick="app.copyToClipboard(document.getElementById('rMode').textContent)" title="Copy to clipboard">Copy</button></div>
-      <div class="box"><div class="box-title">Word / Phrase</div><div class="box-value" id="rTerm">-</div><button class="copy-btn" onclick="app.copyToClipboard(document.getElementById('rTerm').textContent)" title="Copy to clipboard">Copy</button></div>
-      <div class="box"><div class="box-title">Meaning</div><div class="box-value meaning" id="rMeaning">-</div><button class="copy-btn" onclick="app.copyToClipboard(document.getElementById('rMeaning').textContent)" title="Copy to clipboard">Copy</button></div>
-      <div class="box"><div class="box-title">Synonyms</div><div class="box-value" id="rSyn">-</div><button class="copy-btn" onclick="app.copyToClipboard(document.getElementById('rSyn').textContent)" title="Copy to clipboard">Copy</button></div>
-      <div class="box"><div class="box-title">Antonyms</div><div class="box-value" id="rAnt">-</div><button class="copy-btn" onclick="app.copyToClipboard(document.getElementById('rAnt').textContent)" title="Copy to clipboard">Copy</button></div>
-      <div class="box"><div class="box-title">Example</div><div class="box-value" id="rEx">-</div><button class="copy-btn" onclick="app.copyToClipboard(document.getElementById('rEx').textContent)" title="Copy to clipboard">Copy</button></div>
-      <div class="box"><div class="box-title">Example Hindi</div><div class="box-value" id="rExHi">-</div><button class="copy-btn" onclick="app.copyToClipboard(document.getElementById('rExHi').textContent)" title="Copy to clipboard">Copy</button></div>
+      <div class="box"><div class="box-title">Section</div><div class="box-value" id="rMode">-</div><button class="copy-btn" onclick="app.copyToClipboard('rMode')" title="Copy">Copy</button></div>
+      <div class="box"><div class="box-title">Word / Phrase</div><div class="box-value" id="rTerm">-</div><button class="copy-btn" onclick="app.copyToClipboard('rTerm')" title="Copy">Copy</button></div>
+      <div class="box"><div class="box-title">Meaning</div><div class="box-value meaning" id="rMeaning">-</div><button class="copy-btn" onclick="app.copyToClipboard('rMeaning')" title="Copy">Copy</button></div>
+      <div class="box"><div class="box-title">Synonyms</div><div class="box-value" id="rSyn">-</div><button class="copy-btn" onclick="app.copyToClipboard('rSyn')" title="Copy">Copy</button></div>
+      <div class="box"><div class="box-title">Antonyms</div><div class="box-value" id="rAnt">-</div><button class="copy-btn" onclick="app.copyToClipboard('rAnt')" title="Copy">Copy</button></div>
+      <div class="box"><div class="box-title">Example</div><div class="box-value" id="rEx">-</div><button class="copy-btn" onclick="app.copyToClipboard('rEx')" title="Copy">Copy</button></div>
+      <div class="box"><div class="box-title">Example Hindi</div><div class="box-value" id="rExHi">-</div><button class="copy-btn" onclick="app.copyToClipboard('rExHi')" title="Copy">Copy</button></div>
     </div>
   </section>
   <section class="card history">
-    <div class="history-head"><div><h2 style="margin:0">Saved vocabulary revision list</h2><p class="hint">Stored locally in this browser.</p></div><div class="row"><button onclick="app.savePdf()">Download PDF</button><button class="secondary" onclick="app.downloadJson()">Export JSON</button><button class="secondary" onclick="app.downloadCsv()">Export CSV</button><button class="secondary" onclick="app.clearHistory()" style="color:var(--red);border-color:var(--red)">Clear All</button></div></div>
+    <div class="history-head">
+      <div><h2 style="margin:0">Saved vocabulary revision list</h2><p class="hint">Stored locally in this browser.</p></div>
+      <div class="row">
+        <button onclick="app.savePdf()">Download PDF</button>
+        <button class="secondary" onclick="app.downloadJson()">Export JSON</button>
+        <button class="secondary" onclick="app.downloadCsv()">Export CSV</button>
+        <button class="secondary" onclick="app.clearHistory()" style="color:var(--red);border-color:var(--red)">Clear All</button>
+      </div>
+    </div>
     <div class="history-controls"><input id="filter-history" type="search" placeholder="🔍 Search saved words..." onkeyup="app.filterHistory()" aria-label="Search vocabulary"></div>
     <div class="stats" id="stats-display"></div>
     <div id="history" class="history-list"></div>
@@ -60,47 +65,592 @@
 </main>
 <script>
 const app = (() => {
-  const DOM = {term:document.getElementById('term'),go:document.getElementById('go'),status:document.getElementById('status'),rMode:document.getElementById('rMode'),rTerm:document.getElementById('rTerm'),rMeaning:document.getElementById('rMeaning'),rSyn:document.getElementById('rSyn'),rAnt:document.getElementById('rAnt'),rEx:document.getElementById('rEx'),rExHi:document.getElementById('rExHi'),history:document.getElementById('history'),statsDisplay:document.getElementById('stats-display'),filterInput:document.getElementById('filter-history'),pills:document.querySelectorAll('.pill')};
-  const KEY='vocab-ai-history-v4',THEME_KEY='vocab-ai-theme',AI_FUNCTION_URL='https://us-central1-abhyasam-ai.cloudfunctions.net/generateVocabulary',API_TIMEOUT=8000;
-  let current=null,mode='Antonyms & Synonyms',isGenerating=false,statusTimeoutId=null,abortController=null;
-  const localCache={};
-  const built={diligent:{m:'मेहनती',s:['hardworking','industrious'],a:['lazy','careless'],e:'A diligent aspirant revises vocabulary every day.',h:'एक मेहनती अभ्यर्थी हर दिन शब्दावली को दोहराता है।'},prudent:{m:'समझदार, विवेकपूर्ण',s:['wise','sensible'],a:['foolish','careless'],e:'A prudent candidate reads every option before marking the answer.',h:'एक विवेकपूर्ण उम्मीदवार उत्तर चिह्नित करने से पहले हर विकल्प पढ़ता है।'},benevolent:{m:'दयालु, परोपकारी',s:['kind','generous'],a:['cruel','selfish'],e:'The benevolent teacher helped poor students buy books.',h:'दयालु शिक्षक ने गरीब छात्रों को किताबें खरीदने में मदद की।'},obsolete:{m:'पुराना, अप्रचलित',s:['outdated','old-fashioned'],a:['modern','current'],e:'Many obsolete words are no longer used in daily conversation.',h:'कई अप्रचलित शब्दों का अब दैनिक बातचीत में उपयोग नहीं किया जाता है।'},mitigate:{m:'कम करना, घटाना',s:['reduce','lessen'],a:['increase','worsen'],e:'Regular revision can mitigate exam fear before the final test.',h:'नियमित संशोधन अंतिम परीक्षा से पहले परीक्षा भय को कम कर सकता है।'},abundant:{m:'प्रचुर, बहुत अधिक',s:['plentiful','ample'],a:['scarce','limited'],e:'The library has abundant material for government exam preparation.',h:'पुस्तकालय में सरकारी परीक्षा की तैयारी के लिए भरपूर सामग्री है।'},honest:{m:'ईमानदार',s:['truthful','sincere'],a:['dishonest','false'],e:'An honest officer does not misuse public money.',h:'एक ईमानदार अधिकारी सार्वजनिक धन का दुरुपयोग नहीं करता है।'},brave:{m:'बहादुर, साहसी',s:['courageous','fearless'],a:['cowardly','fearful'],e:'The brave constable rescued the child from the burning house.',h:'बहादुर पुलिसकर्मी ने जलते हुए घर से बच्चे को बचाया।'}};
-  const esc=(s)=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const uniq=(a)=>[...new Set((a||[]).map(x=>typeof x==='string'?x:x.word).filter(Boolean).map(x=>x.trim().toLowerCase()).filter(Boolean))];
-  const cleanTwo=(arr)=>{let v=uniq(arr).filter(x=>x.length>2&&!/^[a-z]{1,2}$/.test(x)).slice(0,2);return v.length?v:['Not available automatically'];};
-  const withTimeout=(promise,ms)=>Promise.race([promise,new Promise((_,reject)=>setTimeout(()=>reject(new Error('timeout')),ms))]);
-  const json=async(url)=>{let r=await withTimeout(fetch(url,{signal:abortController?.signal}),API_TIMEOUT);if(!r.ok)throw Error(r.status===404?'not_found':'fetch');return r.json();};
-  const hi=async(text)=>{try{let j=await json('https://api.mymemory.translated.net/get?q='+encodeURIComponent(text)+'&langpair=en|hi');return(j.responseData&&j.responseData.translatedText||'').trim();}catch(e){return 'Hindi translation not available';}};
-  const words=async(term,rel)=>{try{return uniq(await json('https://api.datamuse.com/words?'+rel+'='+encodeURIComponent(term)+'&max=10'));}catch(e){return [];}};
-  const smartFallbackExample=(term,pos='')=>{let t=term.trim(),l=t.toLowerCase(),days={monday:'The exam centre will remain open on Monday for document verification.',tuesday:'The admit card correction window opens on Tuesday morning.',wednesday:'The deadline for fee submission is Wednesday of next week.',thursday:'Results will be declared on Thursday evening.',friday:'The interview schedule was announced on Friday last week.',saturday:'Many candidates prefer to study on Saturday and Sunday.',sunday:'Sunday is a good day to revise all weekly lessons.'};if(days[l])return days[l];if(pos==='n')return `${t} is an important concept in government exams.`;if(pos==='v')return `Candidates who ${t} regularly improve their scores.`;if(pos==='a')return `A ${t} approach helps in competitive exam preparation.`;return `${t} is used in natural English sentences.`;};
-  const example=async(term)=>{if(term.includes(' '))return smartFallbackExample(term);try{let j=await json('https://api.dictionaryapi.dev/api/v2/entries/en/'+encodeURIComponent(term)),pos='';for(let e of j)for(let m of e.meanings||[]){pos=m.partOfSpeech||'';if(pos)break;}let ex=(j[0]?.meanings?.[0]?.definitions?.[0]?.example||'').trim();return ex||smartFallbackExample(term,pos);}catch(e){return smartFallbackExample(term);}};
-  const normalizeEntry=(entry,term)=>{let syn=cleanTwo(entry.synonyms||entry.synonym||[]),ant=cleanTwo(entry.antonyms||entry.antonym||[]);return{mode,term,meaning:String(entry.meaning||entry.hindiMeaning||'Meaning not available').trim(),synonyms:syn,antonyms:ant,example:String(entry.example||'').trim(),exampleHindi:String(entry.exampleHindi||entry.hindiExample||'').trim(),date:new Date().toISOString().split('T')[0]};};
-  const aiEntry=async(term)=>{try{let r=await withTimeout(fetch(AI_FUNCTION_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({term,category:mode}),signal:abortController?.signal}),API_TIMEOUT);if(!r.ok)throw Error('ai call failed');let j=await r.json();if(!j.ok)throw Error(j.error||'Unknown error');return normalizeEntry(j.entry,term);}catch(e){console.warn('AI generation failed:',e);throw e;}};
-  const fallbackEntry=async(term)=>{let key=term.toLowerCase();if(built[key]){let b=built[key];return{mode,term,meaning:b.m,synonyms:b.s,antonyms:b.a,example:b.e,exampleHindi:b.h,date:new Date().toISOString().split('T')[0]};}const[syn,ant,ex]=await Promise.all([words(term,'ml'),words(term,'sl'),example(term)]);const[meaning,exHi]=await Promise.all([hi(term),ex!==smartFallbackExample(term)?hi(ex):Promise.resolve('')]);return{mode,term,meaning,synonyms:cleanTwo(syn),antonyms:cleanTwo(ant),example:ex,exampleHindi:exHi,date:new Date().toISOString().split('T')[0]};};
-  const status=(t,c='')=>{DOM.status.textContent=t;DOM.status.className='status '+c;if(statusTimeoutId)clearTimeout(statusTimeoutId);if(c==='ok'){statusTimeoutId=setTimeout(()=>{DOM.status.textContent='';DOM.status.className='status';},3000);}};
-  const setMode=(next)=>{mode=next;DOM.pills.forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));};
-  const validateTerm=(term)=>{if(!term)return{valid:false,msg:'Enter a word or phrase first.'};if(term.length>100)return{valid:false,msg:'Word/phrase is too long (max 100 characters).'};if(/^\d+$/.test(term))return{valid:false,msg:'Please enter a valid word, not just numbers.'};return{valid:true};};
-  const isDuplicate=(term,mode)=>history().some(x=>x.term.toLowerCase()===term.toLowerCase()&&x.mode===mode);
-  const generateEntry=async()=>{if(isGenerating){status('Already generating... please wait.','warn');return;}let term=DOM.term.value.trim();const validation=validateTerm(term);if(!validation.valid){status(validation.msg,'err');return;}const cacheKey=`${mode}|${term}`.toLowerCase();if(localCache[cacheKey]){current=localCache[cacheKey];renderResult(current);status('Loaded from cache','ok');return;}if(isDuplicate(term,mode)){status('⚠ This entry is already saved. Generating anyway...','warn');}isGenerating=true;abortController=new AbortController();DOM.go.disabled=true;const originalText=DOM.go.textContent;try{DOM.go.innerHTML='<span class="spinner"></span>Generating...';status('Generating AI revision entry...','warn');let e;try{e=await aiEntry(term);status('✓ Entry generated (AI)','ok');}catch(aiErr){if(aiErr.message==='timeout'){status('AI timeout, using fallback...','warn');}else{status('AI unavailable, using fallback...','warn');}e=await fallbackEntry(term);}current=e;localCache[cacheKey]=e;renderResult(e);if(!e.synonyms[0].includes('Not available')){status('✓ Entry generated','ok');}}catch(err){console.error(err);status('Failed to generate entry. Check your network.','err');}finally{isGenerating=false;abortController=null;DOM.go.disabled=false;DOM.go.textContent=originalText;}};
-  const renderResult=(d)=>{DOM.rMode.textContent=d.mode||mode;DOM.rTerm.textContent=d.term;DOM.rMeaning.textContent=d.meaning;DOM.rSyn.textContent=(d.synonyms||[]).join(', ');DOM.rAnt.textContent=(d.antonyms||[]).join(', ');DOM.rEx.textContent=d.example;DOM.rExHi.textContent=d.exampleHindi;};
-  const clearEntry=()=>{current=null;DOM.term.value='';['rMode','rTerm','rMeaning','rSyn','rAnt','rEx','rExHi'].forEach(id=>DOM[id]?DOM[id].textContent='-':null);status('','');DOM.term.focus();};
-  const history=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){return [];}};
-  const setHistory=(a)=>{localStorage.setItem(KEY,JSON.stringify(a));renderHistory();updateStats();};
-  const saveCurrent=()=>{if(!current){status('Generate an entry first.','err');return;}let a=history().filter(x=>(x.mode+'|'+x.term).toLowerCase()!==(current.mode+'|'+current.term).toLowerCase());a.unshift(current);setHistory(a.slice(0,500));status('✓ Saved to revision list','ok');};
-  const updateStats=()=>{let a=history();if(!a.length){DOM.statsDisplay.innerHTML='';return;}DOM.statsDisplay.innerHTML=`📊 <strong>${a.length}</strong> word${a.length!==1?'s':''} saved`;};
-  const renderHistory=(filtered=null)=>{let a=filtered||history(),el=DOM.history;if(!a.length){el.innerHTML=`<div class="empty"><p>📚 No saved lookups yet</p><p>Generate a word above and click <strong>Save</strong> to build your revision list</p></div>`;return;}const frag=document.createDocumentFragment();a.forEach((d)=>{const div=document.createElement('div');div.className='history-item';const encodedTerm=btoa(esc(d.term)),encodedMode=btoa(esc(d.mode));div.innerHTML=`<div><div class="history-term">${esc(d.term)}</div><div class="history-meta">${esc(d.mode)} • ${d.date||'N/A'}</div><div class="history-meta">${esc(d.meaning)}</div></div><button class="history-btn" onclick="app.deleteEntry('${encodedTerm}', '${encodedMode}')" aria-label="Delete ${esc(d.term)}">Delete</button>`;frag.appendChild(div);});el.innerHTML='';el.appendChild(frag);};
-  const filterHistory=()=>{let query=DOM.filterInput.value.toLowerCase();if(!query){renderHistory();return;}let a=history().filter(x=>x.term.toLowerCase().includes(query)||x.meaning.toLowerCase().includes(query));renderHistory(a);};
-  const deleteEntry=(encodedTerm,encodedMode)=>{const term=atob(encodedTerm),mode=atob(encodedMode);let a=history().filter(x=>!(x.term===term&&x.mode===mode));setHistory(a);status('✓ Entry deleted','ok');};
-  const clearHistory=()=>{if(confirm('Delete all saved vocabulary entries from this browser? This action cannot be undone.')){setHistory([]);status('✓ All entries cleared','ok');}};
-  const copyToClipboard=(text)=>{if(text==='-')return;navigator.clipboard.writeText(text).then(()=>{status('✓ Copied to clipboard','ok');}).catch(()=>{status('Failed to copy','err');});};
-  const downloadJson=()=>{let blob=new Blob([JSON.stringify(history(),null,2)],{type:'application/json'});download(blob,'vocab-ai-history.json');status('✓ Exported as JSON','ok');};
-  const downloadCsv=()=>{let a=history();if(!a.length){status('No saved entries to download.','err');return;}let csv='Term,Category,Meaning,Synonyms,Antonyms,Example,Example Hindi,Date\n';csv+=a.map(d=>`"${esc(d.term).replace(/"/g,'""')}","${esc(d.mode).replace(/"/g,'""')}","${esc(d.meaning).replace(/"/g,'""')}","${(d.synonyms||[]).join('; ')}","${(d.antonyms||[]).join('; ')}","${esc(d.example).replace(/"/g,'""')}","${esc(d.exampleHindi).replace(/"/g,'""')}","${d.date}"`).join('\n');let blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});download(blob,'vocab-ai-history.csv');status('✓ Exported as CSV','ok');};
-  const download=(blob,name)=>{let u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.click();URL.revokeObjectURL(u);};
-  const savePdf=()=>{let a=history();if(!a.length){status('No saved entries to download.','err');return;}let rows=a.map((d,i)=>`<section><h2>${i+1}. ${esc(d.term)}</h2><p><b>Section:</b> ${esc(d.mode)}</p><p><b>Meaning:</b> ${esc(d.meaning)}</p><p><b>Synonyms:</b> ${esc((d.synonyms||[]).join(', '))}</p><p><b>Antonyms:</b> ${esc((d.antonyms||[]).join(', '))}</p><p><b>Example:</b> ${esc(d.example)}</p><p><b>Example (Hindi):</b> ${esc(d.exampleHindi)}</p><p><b>Date:</b> ${esc(d.date)}</p></section>`).join('');let html=`<!DOCTYPE html><html><head><meta charset="utf-8"><title>vocab.ai Revision</title><style>body{font-family:Arial,sans-serif;line-height:1.6;margin:20px;color:#333}section{page-break-inside:avoid;margin:20px 0;padding:15px;border-left:4px solid #2563eb;background:#f9fafb}h2{color:#2563eb;margin-top:0}p{margin:8px 0}</style></head><body><h1>vocab.ai Revision List</h1><p>Generated on ${new Date().toLocaleDateString()}</p><p style="color:#666;font-size:12px">${a.length} words saved</p>${rows}</body></html>`;let blob=new Blob([html],{type:'text/html'});download(blob,'vocab-ai-revision.html');status('✓ Downloaded as PDF','ok');};
-  const toggleDarkMode=()=>{document.body.classList.toggle('dark-mode');let isDark=document.body.classList.contains('dark-mode');localStorage.setItem(THEME_KEY,isDark?'dark':'light');document.querySelector('.theme-toggle').textContent=isDark?'☀️':'🌙';};
-  const initTheme=()=>{let saved=localStorage.getItem(THEME_KEY),prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;if(saved==='dark'||(saved===null&&prefersDark)){document.body.classList.add('dark-mode');document.querySelector('.theme-toggle').textContent='☀️';}};
-  initTheme();DOM.term.addEventListener('keydown',e=>{if(e.key==='Enter')generateEntry();if(e.ctrlKey&&e.key==='s'){e.preventDefault();saveCurrent();}});renderHistory();updateStats();
-  return{generateEntry,saveCurrent,clearEntry,setMode,savePdf,downloadJson,downloadCsv,clearHistory,deleteEntry,filterHistory,copyToClipboard,toggleDarkMode};
+  // Constants
+  const CONSTANTS = {
+    KEY: 'vocab-ai-history-v4',
+    THEME_KEY: 'vocab-ai-theme',
+    API_URL: 'https://us-central1-abhyasam-ai.cloudfunctions.net/generateVocabulary',
+    API_TIMEOUT: 8000,
+    MAX_HISTORY: 500,
+    MAX_TERM_LENGTH: 100,
+    CACHE_SIZE: 50,
+    DEBOUNCE_DELAY: 300
+  };
+
+  // DOM Elements
+  const DOM = {
+    term: document.getElementById('term'),
+    go: document.getElementById('go'),
+    status: document.getElementById('status'),
+    rMode: document.getElementById('rMode'),
+    rTerm: document.getElementById('rTerm'),
+    rMeaning: document.getElementById('rMeaning'),
+    rSyn: document.getElementById('rSyn'),
+    rAnt: document.getElementById('rAnt'),
+    rEx: document.getElementById('rEx'),
+    rExHi: document.getElementById('rExHi'),
+    history: document.getElementById('history'),
+    statsDisplay: document.getElementById('stats-display'),
+    filterInput: document.getElementById('filter-history'),
+    pills: document.querySelectorAll('.pill'),
+    themeToggle: document.querySelector('.theme-toggle')
+  };
+
+  // State
+  const state = {
+    current: null,
+    mode: 'Antonyms & Synonyms',
+    isGenerating: false,
+    statusTimeoutId: null,
+    abortController: null,
+    localCache: {}
+  };
+
+  // Fallback vocabulary data
+  const FALLBACK_VOCAB = {
+    diligent: { m: 'मेहनती', s: ['hardworking', 'industrious'], a: ['lazy', 'careless'], e: 'A diligent aspirant revises vocabulary every day.', h: 'एक मेहनती अभ्यर्थी हर दिन शब्दावली को दोहराता है।' },
+    prudent: { m: 'समझदार, विवेकपूर्ण', s: ['wise', 'sensible'], a: ['foolish', 'careless'], e: 'A prudent candidate reads every option before marking the answer.', h: 'एक विवेकपूर्ण उम्मीदवार उत्तर चिह्नित करने से पहले हर विकल्प पढ़ता है।' },
+    benevolent: { m: 'दयालु, परोपकारी', s: ['kind', 'generous'], a: ['cruel', 'selfish'], e: 'The benevolent teacher helped poor students buy books.', h: 'दयालु शिक्षक ने गरीब छात्रों को किताबें खरीदने में मदद की।' },
+    obsolete: { m: 'पुराना, अप्रचलित', s: ['outdated', 'old-fashioned'], a: ['modern', 'current'], e: 'Many obsolete words are no longer used in daily conversation.', h: 'कई अप्रचलित शब्दों का अब दैनिक बातचीत में उपयोग नहीं किया जाता है।' },
+    mitigate: { m: 'कम करना, घटाना', s: ['reduce', 'lessen'], a: ['increase', 'worsen'], e: 'Regular revision can mitigate exam fear before the final test.', h: 'नियमित संशोधन अंतिम परीक्षा से पहले परीक्षा भय को कम कर सकता है।' },
+    abundant: { m: 'प्रचुर, बहुत अधिक', s: ['plentiful', 'ample'], a: ['scarce', 'limited'], e: 'The library has abundant material for government exam preparation.', h: 'पुस्तकालय में सरकारी परीक्षा की तैयारी के लिए भरपूर सामग्री है।' },
+    honest: { m: 'ईमानदार', s: ['truthful', 'sincere'], a: ['dishonest', 'false'], e: 'An honest officer does not misuse public money.', h: 'एक ईमानदार अधिकारी सार्वजनिक धन का दुरुपयोग नहीं करता है।' },
+    brave: { m: 'बहादुर, साहसी', s: ['courageous', 'fearless'], a: ['cowardly', 'fearful'], e: 'The brave constable rescued the child from the burning house.', h: 'बहादुर पुलिसकर्मी ने जलते हुए घर से बच्चे को बचाया।' }
+  };
+
+  // Utility: HTML Escape
+  const escapeHtml = (str) => {
+    const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+    return String(str || '').replace(/[&<>"']/g, c => map[c]);
+  };
+
+  // Utility: Get unique values from array
+  const getUnique = (arr) => {
+    return [...new Set(
+      (arr || [])
+        .map(x => typeof x === 'string' ? x : x?.word)
+        .filter(Boolean)
+        .map(x => x.trim().toLowerCase())
+        .filter(Boolean)
+    )];
+  };
+
+  // Utility: Clean and limit to 2 items
+  const cleanTwo = (arr) => {
+    const unique = getUnique(arr);
+    const filtered = unique.filter(x => x.length > 2 && !/^[a-z]{1,2}$/.test(x)).slice(0, 2);
+    return filtered.length ? filtered : ['Not available'];
+  };
+
+  // Utility: Promise with timeout
+  const withTimeout = (promise, ms) => {
+    return Promise.race([
+      promise,
+      new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms))
+    ]);
+  };
+
+  // API: Fetch JSON with timeout
+  const fetchJson = async (url) => {
+    try {
+      const response = await withTimeout(
+        fetch(url, { signal: state.abortController?.signal }),
+        CONSTANTS.API_TIMEOUT
+      );
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return await response.json();
+    } catch (error) {
+      console.warn('Fetch error:', error.message);
+      throw error;
+    }
+  };
+
+  // API: Translate to Hindi
+  const translateToHindi = async (text) => {
+    try {
+      const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|hi`;
+      const data = await fetchJson(url);
+      return (data?.responseData?.translatedText || '').trim() || 'Translation unavailable';
+    } catch (error) {
+      return 'Translation unavailable';
+    }
+  };
+
+  // API: Get synonyms/antonyms
+  const getRelatedWords = async (term, type) => {
+    try {
+      const url = `https://api.datamuse.com/words?${type}=${encodeURIComponent(term)}&max=10`;
+      return getUnique(await fetchJson(url));
+    } catch (error) {
+      return [];
+    }
+  };
+
+  // Utility: Generate smart fallback example
+  const getFallbackExample = (term, partOfSpeech = '') => {
+    const t = term.trim();
+    const l = t.toLowerCase();
+    const examples = {
+      monday: 'The exam centre will remain open on Monday for document verification.',
+      tuesday: 'The admit card correction window opens on Tuesday morning.',
+      wednesday: 'The deadline for fee submission is Wednesday of next week.',
+      thursday: 'Results will be declared on Thursday evening.',
+      friday: 'The interview schedule was announced on Friday last week.',
+      saturday: 'Many candidates prefer to study on Saturday and Sunday.',
+      sunday: 'Sunday is a good day to revise all weekly lessons.'
+    };
+    if (examples[l]) return examples[l];
+    if (partOfSpeech === 'n') return `${t} is an important concept in government exams.`;
+    if (partOfSpeech === 'v') return `Candidates who ${t} regularly improve their scores.`;
+    if (partOfSpeech === 'a') return `A ${t} approach helps in competitive exam preparation.`;
+    return `${t} is used in natural English sentences.`;
+  };
+
+  // API: Get example sentence
+  const getExample = async (term) => {
+    if (term.includes(' ')) return getFallbackExample(term);
+    try {
+      const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(term)}`;
+      const data = await fetchJson(url);
+      let partOfSpeech = '';
+      for (const entry of data || []) {
+        for (const meaning of entry?.meanings || []) {
+          if (meaning.partOfSpeech) {
+            partOfSpeech = meaning.partOfSpeech;
+            break;
+          }
+        }
+      }
+      const example = data?.[0]?.meanings?.[0]?.definitions?.[0]?.example || '';
+      return example.trim() || getFallbackExample(term, partOfSpeech);
+    } catch (error) {
+      return getFallbackExample(term);
+    }
+  };
+
+  // Normalize entry structure
+  const normalizeEntry = (entry, term) => {
+    return {
+      mode: state.mode,
+      term,
+      meaning: String(entry?.meaning || entry?.hindiMeaning || 'Meaning unavailable').trim(),
+      synonyms: cleanTwo(entry?.synonyms || entry?.synonym || []),
+      antonyms: cleanTwo(entry?.antonyms || entry?.antonym || []),
+      example: String(entry?.example || '').trim(),
+      exampleHindi: String(entry?.exampleHindi || entry?.hindiExample || '').trim(),
+      date: new Date().toISOString().split('T')[0]
+    };
+  };
+
+  // API: Generate via AI
+  const generateViaAI = async (term) => {
+    try {
+      const response = await withTimeout(
+        fetch(CONSTANTS.API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ term, category: state.mode }),
+          signal: state.abortController?.signal
+        }),
+        CONSTANTS.API_TIMEOUT
+      );
+      if (!response.ok) throw new Error('AI API failed');
+      const data = await response.json();
+      if (!data?.ok) throw new Error(data?.error || 'Unknown AI error');
+      return normalizeEntry(data.entry, term);
+    } catch (error) {
+      console.warn('AI generation failed:', error.message);
+      throw error;
+    }
+  };
+
+  // Fallback: Generate from public APIs
+  const generateViaFallback = async (term) => {
+    const key = term.toLowerCase();
+    if (FALLBACK_VOCAB[key]) {
+      const vocab = FALLBACK_VOCAB[key];
+      return {
+        mode: state.mode,
+        term,
+        meaning: vocab.m,
+        synonyms: vocab.s,
+        antonyms: vocab.a,
+        example: vocab.e,
+        exampleHindi: vocab.h,
+        date: new Date().toISOString().split('T')[0]
+      };
+    }
+
+    // Parallel API calls
+    const [synonyms, antonyms, example] = await Promise.all([
+      getRelatedWords(term, 'ml'),
+      getRelatedWords(term, 'sl'),
+      getExample(term)
+    ]);
+
+    const [meaning, exampleHindi] = await Promise.all([
+      translateToHindi(term),
+      example !== getFallbackExample(term) ? translateToHindi(example) : Promise.resolve('')
+    ]);
+
+    return {
+      mode: state.mode,
+      term,
+      meaning,
+      synonyms: cleanTwo(synonyms),
+      antonyms: cleanTwo(antonyms),
+      example,
+      exampleHindi,
+      date: new Date().toISOString().split('T')[0]
+    };
+  };
+
+  // UI: Show status message
+  const showStatus = (message, type = '') => {
+    DOM.status.textContent = message;
+    DOM.status.className = `status ${type}`.trim();
+    if (state.statusTimeoutId) clearTimeout(state.statusTimeoutId);
+    if (type === 'ok') {
+      state.statusTimeoutId = setTimeout(() => {
+        DOM.status.textContent = '';
+        DOM.status.className = 'status';
+      }, 3000);
+    }
+  };
+
+  // UI: Set active mode
+  const setMode = (modeValue) => {
+    state.mode = modeValue;
+    DOM.pills.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.mode === modeValue);
+    });
+  };
+
+  // Validation: Check term validity
+  const validateTerm = (term) => {
+    if (!term) return { valid: false, msg: 'Enter a word or phrase.' };
+    if (term.length > CONSTANTS.MAX_TERM_LENGTH) return { valid: false, msg: `Max ${CONSTANTS.MAX_TERM_LENGTH} characters.` };
+    if (/^\d+$/.test(term)) return { valid: false, msg: 'Enter a valid word, not just numbers.' };
+    if (/[<>{}[\]\\"]/.test(term)) return { valid: false, msg: 'Remove special characters.' };
+    return { valid: true };
+  };
+
+  // Check if entry already exists
+  const isDuplicate = (term, mode) => {
+    return getHistory().some(x => x.term.toLowerCase() === term.toLowerCase() && x.mode === mode);
+  };
+
+  // Main: Generate entry
+  const generateEntry = async () => {
+    if (state.isGenerating) {
+      showStatus('Already generating... wait.', 'warn');
+      return;
+    }
+
+    const term = DOM.term.value.trim();
+    const validation = validateTerm(term);
+    if (!validation.valid) {
+      showStatus(validation.msg, 'err');
+      return;
+    }
+
+    const cacheKey = `${state.mode}|${term}`.toLowerCase();
+    if (state.localCache[cacheKey]) {
+      state.current = state.localCache[cacheKey];
+      renderResult(state.current);
+      showStatus('Loaded from cache', 'ok');
+      return;
+    }
+
+    if (isDuplicate(term, state.mode)) {
+      showStatus('⚠ Already saved. Generating anyway...', 'warn');
+    }
+
+    state.isGenerating = true;
+    state.abortController = new AbortController();
+    DOM.go.disabled = true;
+    const originalText = DOM.go.textContent;
+
+    try {
+      DOM.go.innerHTML = '<span class="spinner"></span>Generating...';
+      showStatus('Generating...', 'warn');
+
+      let entry;
+      try {
+        entry = await generateViaAI(term);
+        showStatus('✓ Generated via AI', 'ok');
+      } catch (aiError) {
+        showStatus(`Using fallback (${aiError.message === 'timeout' ? 'timeout' : 'offline'})...`, 'warn');
+        entry = await generateViaFallback(term);
+      }
+
+      state.current = entry;
+      state.localCache[cacheKey] = entry;
+      if (Object.keys(state.localCache).length > CONSTANTS.CACHE_SIZE) {
+        const firstKey = Object.keys(state.localCache)[0];
+        delete state.localCache[firstKey];
+      }
+      renderResult(entry);
+      showStatus('✓ Entry ready', 'ok');
+    } catch (error) {
+      console.error('Generation failed:', error);
+      showStatus('Failed to generate. Check network.', 'err');
+    } finally {
+      state.isGenerating = false;
+      state.abortController = null;
+      DOM.go.disabled = false;
+      DOM.go.textContent = originalText;
+    }
+  };
+
+  // UI: Render result
+  const renderResult = (entry) => {
+    DOM.rMode.textContent = entry.mode || state.mode;
+    DOM.rTerm.textContent = entry.term;
+    DOM.rMeaning.textContent = entry.meaning;
+    DOM.rSyn.textContent = (entry.synonyms || []).join(', ');
+    DOM.rAnt.textContent = (entry.antonyms || []).join(', ');
+    DOM.rEx.textContent = entry.example;
+    DOM.rExHi.textContent = entry.exampleHindi;
+  };
+
+  // UI: Clear entry
+  const clearEntry = () => {
+    state.current = null;
+    DOM.term.value = '';
+    ['rMode', 'rTerm', 'rMeaning', 'rSyn', 'rAnt', 'rEx', 'rExHi'].forEach(id => {
+      if (DOM[id]) DOM[id].textContent = '-';
+    });
+    showStatus('', '');
+    DOM.term.focus();
+  };
+
+  // Storage: Get history
+  const getHistory = () => {
+    try {
+      return JSON.parse(localStorage.getItem(CONSTANTS.KEY) || '[]');
+    } catch (error) {
+      console.warn('Failed to parse history:', error);
+      return [];
+    }
+  };
+
+  // Storage: Save history
+  const saveHistory = (history) => {
+    try {
+      localStorage.setItem(CONSTANTS.KEY, JSON.stringify(history));
+      renderHistory();
+      updateStats();
+    } catch (error) {
+      console.warn('Failed to save history:', error);
+      showStatus('Failed to save. Storage full?', 'err');
+    }
+  };
+
+  // Action: Save current entry
+  const saveCurrent = () => {
+    if (!state.current) {
+      showStatus('Generate an entry first.', 'err');
+      return;
+    }
+    const history = getHistory().filter(x => !(x.term.toLowerCase() === state.current.term.toLowerCase() && x.mode === state.current.mode));
+    history.unshift(state.current);
+    saveHistory(history.slice(0, CONSTANTS.MAX_HISTORY));
+    showStatus('✓ Saved', 'ok');
+  };
+
+  // UI: Update stats
+  const updateStats = () => {
+    const history = getHistory();
+    if (!history.length) {
+      DOM.statsDisplay.innerHTML = '';
+      return;
+    }
+    DOM.statsDisplay.innerHTML = `📊 <strong>${history.length}</strong> word${history.length !== 1 ? 's' : ''} saved`;
+  };
+
+  // UI: Render history
+  const renderHistory = (filtered = null) => {
+    const history = filtered || getHistory();
+    const el = DOM.history;
+
+    if (!history.length) {
+      el.innerHTML = '<div class="empty"><p>📚 No saved entries yet</p><p>Generate a word and click <strong>Save</strong></p></div>';
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+    history.forEach(entry => {
+      const div = document.createElement('div');
+      div.className = 'history-item';
+      const encodedTerm = btoa(escapeHtml(entry.term));
+      const encodedMode = btoa(escapeHtml(entry.mode));
+      div.innerHTML = `
+        <div>
+          <div class="history-term">${escapeHtml(entry.term)}</div>
+          <div class="history-meta">${escapeHtml(entry.mode)} • ${entry.date || 'N/A'}</div>
+          <div class="history-meta">${escapeHtml(entry.meaning)}</div>
+        </div>
+        <button class="history-btn" onclick="app.deleteEntry('${encodedTerm}', '${encodedMode}')" aria-label="Delete ${escapeHtml(entry.term)}">Delete</button>
+      `;
+      frag.appendChild(div);
+    });
+    el.innerHTML = '';
+    el.appendChild(frag);
+  };
+
+  // Action: Filter history
+  const filterHistory = () => {
+    const query = DOM.filterInput.value.toLowerCase();
+    if (!query) {
+      renderHistory();
+      return;
+    }
+    const history = getHistory().filter(x =>
+      x.term.toLowerCase().includes(query) || x.meaning.toLowerCase().includes(query)
+    );
+    renderHistory(history);
+  };
+
+  // Action: Delete entry
+  const deleteEntry = (encodedTerm, encodedMode) => {
+    const term = atob(encodedTerm);
+    const mode = atob(encodedMode);
+    const history = getHistory().filter(x => !(x.term === term && x.mode === mode));
+    saveHistory(history);
+    showStatus('✓ Deleted', 'ok');
+  };
+
+  // Action: Clear history
+  const clearHistory = () => {
+    if (confirm('Delete all saved entries? This cannot be undone.')) {
+      saveHistory([]);
+      showStatus('✓ All cleared', 'ok');
+    }
+  };
+
+  // Action: Copy to clipboard
+  const copyToClipboard = (elementId) => {
+    const element = DOM[elementId];
+    if (!element || element.textContent === '-') return;
+    navigator.clipboard.writeText(element.textContent)
+      .then(() => showStatus('✓ Copied', 'ok'))
+      .catch(() => showStatus('Copy failed', 'err'));
+  };
+
+  // Export: JSON
+  const downloadJson = () => {
+    const history = getHistory();
+    if (!history.length) {
+      showStatus('No entries to export.', 'err');
+      return;
+    }
+    const blob = new Blob([JSON.stringify(history, null, 2)], { type: 'application/json' });
+    downloadFile(blob, 'vocab-ai-history.json');
+    showStatus('✓ Exported as JSON', 'ok');
+  };
+
+  // Export: CSV
+  const downloadCsv = () => {
+    const history = getHistory();
+    if (!history.length) {
+      showStatus('No entries to export.', 'err');
+      return;
+    }
+    const headers = 'Term,Category,Meaning,Synonyms,Antonyms,Example,Example Hindi,Date\n';
+    const rows = history.map(e =>
+      `"${e.term.replace(/"/g, '""')}","${e.mode}","${e.meaning.replace(/"/g, '""')}","${(e.synonyms || []).join('; ')}","${(e.antonyms || []).join('; ')}","${e.example.replace(/"/g, '""')}","${e.exampleHindi.replace(/"/g, '""')}","${e.date}"`
+    ).join('\n');
+    const blob = new Blob([headers + rows], { type: 'text/csv;charset=utf-8;' });
+    downloadFile(blob, 'vocab-ai-history.csv');
+    showStatus('✓ Exported as CSV', 'ok');
+  };
+
+  // Export: PDF (HTML)
+  const savePdf = () => {
+    const history = getHistory();
+    if (!history.length) {
+      showStatus('No entries to export.', 'err');
+      return;
+    }
+    const rows = history.map((e, i) => `
+      <section>
+        <h2>${i + 1}. ${escapeHtml(e.term)}</h2>
+        <p><b>Section:</b> ${escapeHtml(e.mode)}</p>
+        <p><b>Meaning:</b> ${escapeHtml(e.meaning)}</p>
+        <p><b>Synonyms:</b> ${escapeHtml((e.synonyms || []).join(', '))}</p>
+        <p><b>Antonyms:</b> ${escapeHtml((e.antonyms || []).join(', '))}</p>
+        <p><b>Example:</b> ${escapeHtml(e.example)}</p>
+        <p><b>Hindi:</b> ${escapeHtml(e.exampleHindi)}</p>
+        <p><small style="color:#999">Saved: ${e.date}</small></p>
+      </section>
+    `).join('');
+
+    const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>vocab.ai</title><style>body{font-family:Arial,sans-serif;line-height:1.6;margin:20px;color:#333}section{page-break-inside:avoid;margin:20px 0;padding:15px;border-left:4px solid #2563eb;background:#f9fafb}h2{color:#2563eb;margin-top:0}p{margin:6px 0}</style></head><body><h1>vocab.ai Revision List</h1><p>Generated: ${new Date().toLocaleString()}</p><p style="color:#999">Total: ${history.length} words</p>${rows}</body></html>`;
+    const blob = new Blob([html], { type: 'text/html' });
+    downloadFile(blob, 'vocab-ai-revision.html');
+    showStatus('✓ Downloaded as PDF', 'ok');
+  };
+
+  // Utility: Download file
+  const downloadFile = (blob, filename) => {
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  // Theme: Toggle dark mode
+  const toggleDarkMode = () => {
+    const isDark = document.body.classList.toggle('dark-mode');
+    localStorage.setItem(CONSTANTS.THEME_KEY, isDark ? 'dark' : 'light');
+    DOM.themeToggle.textContent = isDark ? '☀️' : '🌙';
+  };
+
+  // Theme: Initialize
+  const initializeTheme = () => {
+    const saved = localStorage.getItem(CONSTANTS.THEME_KEY);
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (saved === null && prefersDark)) {
+      document.body.classList.add('dark-mode');
+      DOM.themeToggle.textContent = '☀️';
+    }
+  };
+
+  // Initialize
+  const init = () => {
+    initializeTheme();
+    renderHistory();
+    updateStats();
+
+    DOM.term.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') generateEntry();
+      if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+        saveCurrent();
+      }
+    });
+  };
+
+  init();
+
+  // Public API
+  return {
+    generateEntry,
+    saveCurrent,
+    clearEntry,
+    setMode,
+    savePdf,
+    downloadJson,
+    downloadCsv,
+    clearHistory,
+    deleteEntry,
+    filterHistory,
+    copyToClipboard,
+    toggleDarkMode
+  };
 })();
 </script>
 </body>
