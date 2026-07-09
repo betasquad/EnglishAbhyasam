@@ -30,7 +30,12 @@ function extractJson(text) {
   } catch (_) {
     const match = raw.match(/\{[\s\S]*\}/);
     if (!match) throw new Error("No JSON returned by model");
-    return JSON.parse(match[0]);
+    try {
+      // BUG FIX: Wrap final parse in try-catch to handle invalid JSON
+      return JSON.parse(match[0]);
+    } catch (e) {
+      throw new Error(`Invalid JSON in model response: ${e.message}`);
+    }
   }
 }
 

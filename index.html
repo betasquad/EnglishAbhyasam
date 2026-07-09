@@ -78,10 +78,10 @@ const app = (() => {
   // Hardcoded fallback data
   const built = {
     diligent: { m: 'मेहनती', s: ['hardworking', 'industrious'], a: ['lazy', 'careless'], e: 'A diligent aspirant revises vocabulary every day.', h: 'एक मेहनती अभ्यर्थी हर दिन शब्दावली का संशोधन करता है।' },
-    prudent: { m: 'समझदार, विवेकपूर्ण', s: ['wise', 'sensible'], a: ['foolish', 'careless'], e: 'A prudent candidate reads every option before marking the answer.', h: 'एक समझदार अभ्यर्थी उत्तर दिए जाने से पहले हर विकल्प को पढ़ता है।' },
+    prudent: { m: 'समझदार, विवेकपूर्ण', s: ['wise', 'sensible'], a: ['foolish', 'careless'], e: 'A prudent candidate reads every option before marking the answer.', h: 'एक समझदार अभ्यर्थी उत्तर देने से पहले हर विकल्प को पढ़ता है।' },
     benevolent: { m: 'दयालु, परोपकारी', s: ['kind', 'generous'], a: ['cruel', 'selfish'], e: 'The benevolent teacher helped poor students buy books.', h: 'दयालु शिक्षक ने गरीब छात्रों को किताबें खरीदने में मदद की।' },
-    obsolete: { m: 'पुराना, अप्रचलित', s: ['outdated', 'old-fashioned'], a: ['modern', 'current'], e: 'Many obsolete words are no longer used in daily conversation.', h: 'कई अप्रचलित शब्द दैनिक बातचीत में अब उपयोग नहीं किए जाते हैं।' },
-    mitigate: { m: 'कम करना, घटाना', s: ['reduce', 'lessen'], a: ['increase', 'worsen'], e: 'Regular revision can mitigate exam fear before the final test.', h: 'नियमित संशोधन अंतिम परीक्षा से पहले परीक्षा के भय को कम कर सकता है।' },
+    obsolete: { m: 'पुराना, अप्रचलित', s: ['outdated', 'old-fashioned'], a: ['modern', 'current'], e: 'Many obsolete words are no longer used in daily conversation.', h: 'कई अप्रचलित शब्द अब दैनिक बातचीत में उपयोग नहीं किए जाते हैं।' },
+    mitigate: { m: 'कम करना, घटाना', s: ['reduce', 'lessen'], a: ['increase', 'worsen'], e: 'Regular revision can mitigate exam fear before the final test.', h: 'नियमित पुनरावृत्ति अंतिम परीक्षा से पहले परीक्षा के भय को कम कर सकती है।' },
     abundant: { m: 'प्रचुर, बहुत अधिक', s: ['plentiful', 'ample'], a: ['scarce', 'limited'], e: 'The library has abundant material for government exam preparation.', h: 'पुस्तकालय में सरकारी परीक्षा की तैयारी के लिए बहुत सामग्री है।' },
     honest: { m: 'ईमानदार', s: ['truthful', 'sincere'], a: ['dishonest', 'false'], e: 'An honest officer does not misuse public money.', h: 'एक ईमानदार अधिकारी सार्वजनिक धन का दुरुपयोग नहीं करता है।' },
     brave: { m: 'बहादुर, साहसी', s: ['courageous', 'fearless'], a: ['cowardly', 'fearful'], e: 'The brave constable rescued the child from the burning house.', h: 'बहादुर सिपाही ने जलते हुए घर से बच्चे को बचाया।' }
@@ -203,8 +203,11 @@ const app = (() => {
       words(term, 'sl'),
       example(term)
     ]);
-    const meaning = await hi(term);
-    const exHi = ex !== smartFallbackExample(term) ? await hi(ex) : '';
+    // BUG FIX: Parallelize translation calls
+    const [meaning, exHi] = await Promise.all([
+      hi(term),
+      ex !== smartFallbackExample(term) ? hi(ex) : Promise.resolve('')
+    ]);
     return {
       mode,
       term,
@@ -328,13 +331,16 @@ const app = (() => {
     a.forEach((d, i) => {
       const div = document.createElement('div');
       div.className = 'history-item';
+      // BUG FIX: Store term+mode instead of index to avoid deletion bugs
+      const encodedTerm = btoa(esc(d.term));
+      const encodedMode = btoa(esc(d.mode));
       div.innerHTML = `
         <div>
           <div class="history-term">${esc(d.term)}</div>
           <div class="history-meta">${esc(d.mode)} • ${d.date || 'N/A'}</div>
           <div class="history-meta">${esc(d.meaning)}</div>
         </div>
-        <button class="history-btn" onclick="app.deleteEntry(${i})">Delete</button>
+        <button class="history-btn" onclick="app.deleteEntry('${encodedTerm}', '${encodedMode}')">Delete</button>
       `;
       frag.appendChild(div);
     });
@@ -342,9 +348,11 @@ const app = (() => {
     el.appendChild(frag);
   };
 
-  const deleteEntry = (index) => {
-    let a = history();
-    a.splice(index, 1);
+  const deleteEntry = (encodedTerm, encodedMode) => {
+    // BUG FIX: Decode and use term+mode to avoid index shifting bugs
+    const term = atob(encodedTerm);
+    const mode = atob(encodedMode);
+    let a = history().filter(x => !(x.term === term && x.mode === mode));
     setHistory(a);
   };
 
