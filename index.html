@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>vocab.ai</title>
 <style>
-:root{--bg:#f6f8ff;--card:#fff;--text:#111827;--muted:#667085;--line:#e5e7eb;--blue:#2563eb;--green:#067647;--red:#b42318;--amber:#b54708}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}input,button,textarea{font:inherit;color:inherit}.wrap{max-width:900px;margin:0 auto;padding:20px 16px}.nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:16px}.brand{font-size:24px;font-weight:700;letter-spacing:-1px}.brand span{color:var(--blue)}.nav-actions{display:flex;gap:8px;flex-wrap:wrap}.pill{padding:8px 16px;border:1px solid var(--line);background:var(--card);border-radius:20px;cursor:pointer;font-size:14px;transition:all 200ms;white-space:nowrap}.pill:hover{border-color:var(--blue);color:var(--blue)}.pill.active{background:var(--blue);color:#fff;border-color:var(--blue)}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:24px}.stack>*+*{margin-top:16px}label{display:block;font-weight:600;margin-bottom:6px;font-size:14px}input[type="text"]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;transition:border 200ms}input[type="text"]:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 2px rgba(37,99,235,.1)}.ai-note{font-size:12px;color:var(--muted);margin:8px 0}.row{display:flex;gap:8px;flex-wrap:wrap}button{padding:10px 16px;border:1px solid var(--blue);background:var(--blue);color:#fff;border-radius:8px;cursor:pointer;font-weight:500;font-size:14px;transition:all 200ms}button:hover{background:#1d4ed8;border-color:#1d4ed8}button:disabled{opacity:.5;cursor:not-allowed}button.secondary{background:var(--card);color:var(--blue);border-color:var(--line)}button.secondary:hover{background:#f9fafb;border-color:var(--blue)}.status{padding:12px;border-radius:8px;font-size:14px;margin-top:8px}.status.warn{background:#fef3c7;color:#92400e}.status.err{background:#fee2e2;color:#991b1b}.status.ok{background:#dcfce7;color:#166534}h2{margin:0 0 12px 0;font-size:18px}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:16px}.box{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px}.box-title{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}.box-value{margin-top:6px;font-size:14px;line-height:1.6;word-break:break-word}.box-value.meaning{color:var(--blue);font-weight:500}.history{margin-top:24px}.history-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;gap:16px}.history-head h2{margin:0}.hint{font-size:12px;color:var(--muted);margin:4px 0 0 0}.history-list{max-height:400px;overflow-y:auto}.history-item{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:start;gap:12px}.history-term{font-weight:600;color:var(--text)}.history-meta{font-size:12px;color:var(--muted)}.history-btn{padding:4px 8px;font-size:12px;margin:0}.empty{color:var(--muted);font-size:14px;padding:20px;text-align:center}
+:root{--bg:#f6f8ff;--card:#fff;--text:#111827;--muted:#5a6b7d;--line:#e5e7eb;--blue:#2563eb;--green:#067647;--red:#b42318;--amber:#b54708}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}.wrap{max-width:900px;margin:0 auto;padding:20px}.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:20px;flex-wrap:wrap}.brand{font-size:24px;font-weight:700;color:var(--blue)}.brand span{color:var(--text)}.nav-actions{display:flex;gap:10px;flex-wrap:wrap}@media(max-width:768px){.nav{flex-direction:column;align-items:flex-start}.nav-actions{width:100%}}.pill{padding:8px 16px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;cursor:pointer;font-size:14px;font-weight:500;transition:all 150ms ease}.pill:hover{border-color:var(--blue);background:rgba(37,99,235,0.05)}.pill.active{background:var(--blue);color:white;border-color:var(--blue)}.pill:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.1)}@media(max-width:600px){.pill{font-size:12px;padding:6px 12px}}.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;margin-bottom:20px;box-shadow:0 1px 2px rgba(0,0,0,0.05)}.stack>div{margin-bottom:20px}.stack>div:last-child{margin-bottom:0}label{display:block;margin-bottom:8px;font-weight:600;color:var(--text)}input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;font-size:14px;font-family:inherit;transition:all 150ms ease}input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.1);background:var(--card)}input::placeholder{color:var(--muted)}.ai-note{margin:8px 0 0;font-size:12px;color:var(--muted)}.row{display:flex;gap:10px;flex-wrap:wrap}@media(max-width:480px){.row{flex-direction:column}.row button{width:100%}}button{padding:10px 16px;border:1px solid var(--blue);background:var(--blue);color:white;border-radius:6px;cursor:pointer;font-size:14px;font-weight:500;transition:all 150ms ease;font-family:inherit}button:hover:not(:disabled){background:#1d4ed8;border-color:#1d4ed8}button:focus{outline:none;box-shadow:0 0 0 3px rgba(37,99,235,0.1)}button:disabled{opacity:0.6;cursor:not-allowed}button.secondary{background:transparent;color:var(--blue);border-color:var(--blue)}button.secondary:hover:not(:disabled){background:rgba(37,99,235,0.1)}.status{padding:10px 12px;border-radius:6px;font-size:14px;margin-top:10px;transition:opacity 300ms ease}.status.ok{background:rgba(6,118,71,0.1);color:var(--green);border:1px solid rgba(6,118,71,0.3)}.status.err{background:rgba(180,35,24,0.1);color:var(--red);border:1px solid rgba(180,35,24,0.3)}.status.warn{background:rgba(181,71,8,0.1);color:var(--amber);border:1px solid rgba(181,71,8,0.3)}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}@media(max-width:600px){.results{grid-template-columns:1fr}}.box{background:rgba(37,99,235,0.03);border:1px solid var(--line);border-radius:6px;padding:12px}.box-title{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;margin-bottom:6px;letter-spacing:0.5px}.box-value{font-size:14px;color:var(--text);line-height:1.6;word-break:break-word}.meaning{font-style:italic}.history{margin-top:40px}.history-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px}@media(max-width:600px){.history-head{flex-direction:column;align-items:flex-start}}.history-head h2{margin:0;color:var(--text);font-size:18px}.hint{margin:4px 0 0;font-size:12px;color:var(--muted)}.history-list{display:flex;flex-direction:column;gap:10px}.history-item{display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(37,99,235,0.02);border:1px solid var(--line);border-radius:6px;transition:all 150ms ease}@media(max-width:600px){.history-item{flex-direction:column;align-items:flex-start;gap:10px}}.history-item:hover{background:rgba(37,99,235,0.05);border-color:var(--blue)}.history-item>div{flex:1}.history-term{font-weight:600;color:var(--text);margin-bottom:6px}.history-meta{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}.history-btn{padding:6px 12px;font-size:12px;background:transparent;color:var(--red);border-color:var(--red)}@media(max-width:600px){.history-btn{width:100%}}.empty{padding:20px;text-align:center;color:var(--muted);background:rgba(37,99,235,0.03);border-radius:6px;border:1px dashed var(--line)}.empty p{margin:8px 0}.empty p:first-child{font-size:24px;margin-top:0}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(37,99,235,0.3);border-top-color:var(--blue);border-radius:50%;animation:spin 0.8s linear infinite;margin-right:6px;vertical-align:middle}
 </style>
 </head>
 <body>
@@ -21,8 +21,11 @@
   </div>
   <section class="card stack">
     <div>
-      <label for="term">Word or phrase</label>
-      <input id="term" placeholder="Enter word or phrase" autocomplete="off">
+      <label for="term">
+        Word or phrase
+        <span class="hint" style="display:block;font-weight:normal;margin-top:4px">e.g., diligent, one word substitution</span>
+      </label>
+      <input id="term" placeholder="Enter word or phrase" autocomplete="off" aria-label="Enter a word or phrase to generate vocabulary entry">
       <p class="ai-note">AI generation uses Firebase Cloud Function when deployed. Local lookup remains as fallback.</p>
     </div>
     <div class="row">
@@ -30,7 +33,7 @@
       <button class="secondary" onclick="app.saveCurrent()">Save</button>
       <button class="secondary" onclick="app.clearEntry()">Clear</button>
     </div>
-    <div id="status" class="status"></div>
+    <div id="status" class="status" role="status" aria-live="polite" aria-atomic="true"></div>
   </section>
   <section class="card">
     <div class="results">
@@ -44,7 +47,7 @@
     </div>
   </section>
   <section class="card history">
-    <div class="history-head"><div><h2 style="margin:0">Saved vocabulary revision list</h2><p class="hint">Stored locally in this browser.</p></div><div class="row"><button onclick="app.savePdf()">Download PDF</button><button class="secondary" onclick="app.downloadJson()">Download JSON</button><button class="secondary" onclick="app.clearHistory()">Clear All</button></div></div>
+    <div class="history-head"><div><h2 style="margin:0">Saved vocabulary revision list</h2><p class="hint">Stored locally in this browser.</p></div><div class="row"><button onclick="app.savePdf()">Download PDF</button><button class="secondary" onclick="app.downloadJson()">Export JSON</button><button class="secondary" onclick="app.clearHistory()" style="color:var(--red);border-color:var(--red)">Clear All</button></div></div>
     <div id="history" class="history-list"></div>
   </section>
 </main>
@@ -73,18 +76,19 @@ const app = (() => {
   let current = null;
   let mode = 'Antonyms & Synonyms';
   let isGenerating = false; // Debounce flag
+  let statusTimeoutId = null; // For auto-clearing status
   const localCache = {}; // In-memory cache for this session
 
   // Hardcoded fallback data
   const built = {
-    diligent: { m: 'मेहनती', s: ['hardworking', 'industrious'], a: ['lazy', 'careless'], e: 'A diligent aspirant revises vocabulary every day.', h: 'एक मेहनती अभ्यर्थी हर दिन शब्दावली का संशोधन करता है।' },
-    prudent: { m: 'समझदार, विवेकपूर्ण', s: ['wise', 'sensible'], a: ['foolish', 'careless'], e: 'A prudent candidate reads every option before marking the answer.', h: 'एक समझदार अभ्यर्थी उत्तर देने से पहले हर विकल्प को पढ़ता है।' },
+    diligent: { m: 'मेहनती', s: ['hardworking', 'industrious'], a: ['lazy', 'careless'], e: 'A diligent aspirant revises vocabulary every day.', h: 'एक मेहनती अभ्यर्थी हर दिन शब्दावली को दोहराता है।' },
+    prudent: { m: 'समझदार, विवेकपूर्ण', s: ['wise', 'sensible'], a: ['foolish', 'careless'], e: 'A prudent candidate reads every option before marking the answer.', h: 'एक विवेकपूर्ण उम्मीदवार उत्तर चिह्नित करने से पहले हर विकल्प पढ़ता है।' },
     benevolent: { m: 'दयालु, परोपकारी', s: ['kind', 'generous'], a: ['cruel', 'selfish'], e: 'The benevolent teacher helped poor students buy books.', h: 'दयालु शिक्षक ने गरीब छात्रों को किताबें खरीदने में मदद की।' },
-    obsolete: { m: 'पुराना, अप्रचलित', s: ['outdated', 'old-fashioned'], a: ['modern', 'current'], e: 'Many obsolete words are no longer used in daily conversation.', h: 'कई अप्रचलित शब्द अब दैनिक बातचीत में उपयोग नहीं किए जाते हैं।' },
-    mitigate: { m: 'कम करना, घटाना', s: ['reduce', 'lessen'], a: ['increase', 'worsen'], e: 'Regular revision can mitigate exam fear before the final test.', h: 'नियमित पुनरावृत्ति अंतिम परीक्षा से पहले परीक्षा के भय को कम कर सकती है।' },
-    abundant: { m: 'प्रचुर, बहुत अधिक', s: ['plentiful', 'ample'], a: ['scarce', 'limited'], e: 'The library has abundant material for government exam preparation.', h: 'पुस्तकालय में सरकारी परीक्षा की तैयारी के लिए बहुत सामग्री है।' },
+    obsolete: { m: 'पुराना, अप्रचलित', s: ['outdated', 'old-fashioned'], a: ['modern', 'current'], e: 'Many obsolete words are no longer used in daily conversation.', h: 'कई अप्रचलित शब्दों का अब दैनिक बातचीत में उपयोग नहीं किया जाता है।' },
+    mitigate: { m: 'कम करना, घटाना', s: ['reduce', 'lessen'], a: ['increase', 'worsen'], e: 'Regular revision can mitigate exam fear before the final test.', h: 'नियमित संशोधन अंतिम परीक्षा से पहले परीक्षा भय को कम कर सकता है।' },
+    abundant: { m: 'प्रचुर, बहुत अधिक', s: ['plentiful', 'ample'], a: ['scarce', 'limited'], e: 'The library has abundant material for government exam preparation.', h: 'पुस्तकालय में सरकारी परीक्षा की तैयारी के लिए भरपूर सामग्री है।' },
     honest: { m: 'ईमानदार', s: ['truthful', 'sincere'], a: ['dishonest', 'false'], e: 'An honest officer does not misuse public money.', h: 'एक ईमानदार अधिकारी सार्वजनिक धन का दुरुपयोग नहीं करता है।' },
-    brave: { m: 'बहादुर, साहसी', s: ['courageous', 'fearless'], a: ['cowardly', 'fearful'], e: 'The brave constable rescued the child from the burning house.', h: 'बहादुर सिपाही ने जलते हुए घर से बच्चे को बचाया।' }
+    brave: { m: 'बहादुर, साहसी', s: ['courageous', 'fearless'], a: ['cowardly', 'fearful'], e: 'The brave constable rescued the child from the burning house.', h: 'बहादुर पुलिसकर्मी ने जलते हुए घर से बच्चे को बचाया।' },
   };
 
   const esc = (s) => String(s || '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
@@ -223,6 +227,14 @@ const app = (() => {
   const status = (t, c = '') => {
     DOM.status.textContent = t;
     DOM.status.className = 'status ' + c;
+    // Auto-clear success messages after 3 seconds
+    if (statusTimeoutId) clearTimeout(statusTimeoutId);
+    if (c === 'ok') {
+      statusTimeoutId = setTimeout(() => {
+        DOM.status.textContent = '';
+        DOM.status.className = 'status';
+      }, 3000);
+    }
   };
 
   const setMode = (next) => {
@@ -255,8 +267,10 @@ const app = (() => {
 
     isGenerating = true;
     DOM.go.disabled = true;
+    const originalText = DOM.go.textContent;
 
     try {
+      DOM.go.innerHTML = '<span class="spinner"></span>Generating...';
       status('Generating AI revision entry...', 'warn');
       let e;
       try {
@@ -275,6 +289,7 @@ const app = (() => {
     } finally {
       isGenerating = false;
       DOM.go.disabled = false;
+      DOM.go.textContent = originalText;
     }
   };
 
@@ -323,7 +338,10 @@ const app = (() => {
   const renderHistory = () => {
     let a = history(), el = DOM.history;
     if (!a.length) {
-      el.innerHTML = '<div class="empty">No saved lookups yet. Generate a word and click Save to start your revision list.</div>';
+      el.innerHTML = `<div class="empty">
+        <p>📚 No saved lookups yet</p>
+        <p>Generate a word above and click <strong>Save</strong> to build your revision list</p>
+      </div>`;
       return;
     }
     // Efficient rendering: build fragment instead of concatenating
@@ -340,7 +358,7 @@ const app = (() => {
           <div class="history-meta">${esc(d.mode)} • ${d.date || 'N/A'}</div>
           <div class="history-meta">${esc(d.meaning)}</div>
         </div>
-        <button class="history-btn" onclick="app.deleteEntry('${encodedTerm}', '${encodedMode}')">Delete</button>
+        <button class="history-btn" onclick="app.deleteEntry('${encodedTerm}', '${encodedMode}')" aria-label="Delete ${esc(d.term)}">Delete</button>
       `;
       frag.appendChild(div);
     });
@@ -354,15 +372,20 @@ const app = (() => {
     const mode = atob(encodedMode);
     let a = history().filter(x => !(x.term === term && x.mode === mode));
     setHistory(a);
+    status('✓ Entry deleted', 'ok');
   };
 
   const clearHistory = () => {
-    if (confirm('Delete all saved vocabulary entries from this browser?')) setHistory([]);
+    if (confirm('Delete all saved vocabulary entries from this browser? This action cannot be undone.')) {
+      setHistory([]);
+      status('✓ All entries cleared', 'ok');
+    }
   };
 
   const downloadJson = () => {
     let blob = new Blob([JSON.stringify(history(), null, 2)], { type: 'application/json' });
     download(blob, 'vocab-ai-history.json');
+    status('✓ Exported as JSON', 'ok');
   };
 
   const download = (blob, name) => {
@@ -379,10 +402,11 @@ const app = (() => {
       status('No saved entries to download.', 'err');
       return;
     }
-    let rows = a.map((d, i) => `<section><h2>${i + 1}. ${esc(d.term)}</h2><p><b>Section:</b> ${esc(d.mode)}</p><p><b>Meaning:</b> ${esc(d.meaning)}</p><p><b>Synonyms:</b> ${esc((d.synonyms || []).join(', '))}</p><p><b>Antonyms:</b> ${esc((d.antonyms || []).join(', '))}</p><p><b>Example:</b> ${esc(d.example)}</p><p><b>Hindi:</b> ${esc(d.exampleHindi)}</p></section>`).join('');
-    let html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>vocab.ai Revision</title><style>body{font-family:Arial;line-height:1.6;margin:20px;color:#333}h2{color:#2563eb;page-break-inside:avoid}section{page-break-inside:avoid;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid #eee}</style></head><body><h1>vocab.ai Revision List</h1><p>Generated on ${new Date().toLocaleDateString()}</p>${rows}</body></html>`;
+    let rows = a.map((d, i) => `<section><h2>${i + 1}. ${esc(d.term)}</h2><p><b>Section:</b> ${esc(d.mode)}</p><p><b>Meaning:</b> ${esc(d.meaning)}</p><p><b>Synonyms:</b> ${esc((d.synonyms || []).join(', '))}</p><p><b>Antonyms:</b> ${esc((d.antonyms || []).join(', '))}</p><p><b>Example:</b> ${esc(d.example)}</p><p><b>Example (Hindi):</b> ${esc(d.exampleHindi)}</p><p><b>Date:</b> ${esc(d.date)}</p></section>`).join('');
+    let html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>vocab.ai Revision</title><style>body{font-family:Arial,sans-serif;line-height:1.6;margin:20px;color:#333}section{page-break-inside:avoid;margin:20px 0;padding:15px;border-left:4px solid #2563eb;background:#f9fafb}h2{color:#2563eb;margin-top:0}p{margin:8px 0}</style></head><body><h1>vocab.ai Revision List</h1><p>Generated on ${new Date().toLocaleDateString()}</p>${rows}</body></html>`;
     let blob = new Blob([html], { type: 'text/html' });
     download(blob, 'vocab-ai-revision.html');
+    status('✓ Downloaded as PDF', 'ok');
   };
 
   // Initialize
