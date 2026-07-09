@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>vocab.ai</title>
 <style>
-:root{--bg:#f6f8ff;--card:#fff;--text:#111827;--muted:#667085;--line:#e5e7eb;--blue:#2563eb;--green:#067647;--red:#b42318;--amber:#b54708}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#eaf1ff 0,#f8fafc 300px);color:var(--text);line-height:1.5}.wrap{width:min(1120px,92vw);margin:0 auto;padding:28px 0 48px}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}.brand{font-weight:950;font-size:1.25rem;letter-spacing:-.04em}.brand span{color:var(--blue)}.nav-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;color:#344054;font-weight:900;font-size:.9rem;cursor:pointer}.pill.active{background:var(--blue);border-color:var(--blue);color:#fff}.card{background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:24px;box-shadow:0 18px 50px rgba(17,24,39,.08);padding:22px;margin-bottom:18px}.stack{display:grid;gap:13px}.row{display:flex;gap:10px;flex-wrap:wrap}label{font-weight:900;display:block;margin:0 0 7px}input{width:100%;font:inherit;border:1px solid var(--line);border-radius:15px;background:#fff;color:var(--text);padding:13px 14px;outline:none}input:focus{border-color:#93c5fd;box-shadow:0 0 0 4px rgba(37,99,235,.12)}button{border:0;border-radius:999px;padding:11px 16px;font-weight:950;cursor:pointer;background:var(--blue);color:#fff}button.secondary{background:#fff;color:#111827;border:1px solid var(--line)}button.danger{background:#fff;color:var(--red);border:1px solid #fecaca}button:disabled{opacity:.6;cursor:not-allowed}.status{min-height:24px;margin-top:4px;font-weight:850;color:#475467}.status.ok{color:var(--green)}.status.err{color:var(--red)}.status.warn{color:var(--amber)}.results{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;min-height:105px}.box-title{font-size:.76rem;font-weight:950;color:#667085;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}.box-value{font-weight:850;white-space:pre-wrap}.meaning{font-size:1.2rem}.history-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.history-list{display:grid;gap:10px}.item{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px}.item b{font-size:1.05rem}.meta{color:var(--muted);font-size:.85rem;margin-top:4px}.empty{color:var(--muted);border:1px dashed var(--line);border-radius:18px;padding:16px;background:#fff}.hint{color:var(--muted);margin:.25rem 0 0}.ai-note{font-size:.88rem;color:var(--muted)}@media(max-width:860px){.nav{align-items:flex-start;flex-direction:column}.nav-actions{justify-content:flex-start}.results{grid-template-columns:1fr}.history-head{align-items:flex-start;flex-direction:column}}
+:root{--bg:#f6f8ff;--card:#fff;--text:#111827;--muted:#667085;--line:#e5e7eb;--blue:#2563eb;--green:#067647;--red:#b42318;--amber:#b54708}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}input,button,textarea{font:inherit;color:inherit}.wrap{max-width:900px;margin:0 auto;padding:20px 16px}.nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:16px}.brand{font-size:24px;font-weight:700;letter-spacing:-1px}.brand span{color:var(--blue)}.nav-actions{display:flex;gap:8px;flex-wrap:wrap}.pill{padding:8px 16px;border:1px solid var(--line);background:var(--card);border-radius:20px;cursor:pointer;font-size:14px;transition:all 200ms;white-space:nowrap}.pill:hover{border-color:var(--blue);color:var(--blue)}.pill.active{background:var(--blue);color:#fff;border-color:var(--blue)}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:24px}.stack>*+*{margin-top:16px}label{display:block;font-weight:600;margin-bottom:6px;font-size:14px}input[type="text"]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;transition:border 200ms}input[type="text"]:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 2px rgba(37,99,235,.1)}.ai-note{font-size:12px;color:var(--muted);margin:8px 0}.row{display:flex;gap:8px;flex-wrap:wrap}button{padding:10px 16px;border:1px solid var(--blue);background:var(--blue);color:#fff;border-radius:8px;cursor:pointer;font-weight:500;font-size:14px;transition:all 200ms}button:hover{background:#1d4ed8;border-color:#1d4ed8}button:disabled{opacity:.5;cursor:not-allowed}button.secondary{background:var(--card);color:var(--blue);border-color:var(--line)}button.secondary:hover{background:#f9fafb;border-color:var(--blue)}.status{padding:12px;border-radius:8px;font-size:14px;margin-top:8px}.status.warn{background:#fef3c7;color:#92400e}.status.err{background:#fee2e2;color:#991b1b}.status.ok{background:#dcfce7;color:#166534}h2{margin:0 0 12px 0;font-size:18px}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:16px}.box{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px}.box-title{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}.box-value{margin-top:6px;font-size:14px;line-height:1.6;word-break:break-word}.box-value.meaning{color:var(--blue);font-weight:500}.history{margin-top:24px}.history-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;gap:16px}.history-head h2{margin:0}.hint{font-size:12px;color:var(--muted);margin:4px 0 0 0}.history-list{max-height:400px;overflow-y:auto}.history-item{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:start;gap:12px}.history-term{font-weight:600;color:var(--text)}.history-meta{font-size:12px;color:var(--muted)}.history-btn{padding:4px 8px;font-size:12px;margin:0}.empty{color:var(--muted);font-size:14px;padding:20px;text-align:center}
 </style>
 </head>
 <body>
@@ -13,10 +13,10 @@
   <div class="nav">
     <div class="brand">vocab<span>.ai</span></div>
     <div class="nav-actions" aria-label="Vocabulary sections">
-      <button class="pill" type="button" data-mode="One Word Substitution" onclick="setMode('One Word Substitution')">One Word Substitution</button>
-      <button class="pill" type="button" data-mode="Idioms" onclick="setMode('Idioms')">Idioms</button>
-      <button class="pill active" type="button" data-mode="Antonyms & Synonyms" onclick="setMode('Antonyms & Synonyms')">Antonyms &amp; Synonyms</button>
-      <button class="pill" type="button" data-mode="Spellings" onclick="setMode('Spellings')">Spellings</button>
+      <button class="pill" type="button" data-mode="One Word Substitution" onclick="app.setMode('One Word Substitution')">One Word Substitution</button>
+      <button class="pill" type="button" data-mode="Idioms" onclick="app.setMode('Idioms')">Idioms</button>
+      <button class="pill active" type="button" data-mode="Antonyms & Synonyms" onclick="app.setMode('Antonyms & Synonyms')">Antonyms &amp; Synonyms</button>
+      <button class="pill" type="button" data-mode="Spellings" onclick="app.setMode('Spellings')">Spellings</button>
     </div>
   </div>
   <section class="card stack">
@@ -26,9 +26,9 @@
       <p class="ai-note">AI generation uses Firebase Cloud Function when deployed. Local lookup remains as fallback.</p>
     </div>
     <div class="row">
-      <button id="go" onclick="generateEntry()">Generate</button>
-      <button class="secondary" onclick="saveCurrent()">Save</button>
-      <button class="secondary" onclick="clearEntry()">Clear</button>
+      <button id="go" onclick="app.generateEntry()">Generate</button>
+      <button class="secondary" onclick="app.saveCurrent()">Save</button>
+      <button class="secondary" onclick="app.clearEntry()">Clear</button>
     </div>
     <div id="status" class="status"></div>
   </section>
@@ -44,50 +44,357 @@
     </div>
   </section>
   <section class="card history">
-    <div class="history-head"><div><h2 style="margin:0">Saved vocabulary revision list</h2><p class="hint">Stored locally in this browser.</p></div><div class="row"><button onclick="savePdf()">Download / Save PDF</button><button class="secondary" onclick="downloadJson()">Download JSON</button><button class="danger" onclick="clearHistory()">Clear</button></div></div>
+    <div class="history-head"><div><h2 style="margin:0">Saved vocabulary revision list</h2><p class="hint">Stored locally in this browser.</p></div><div class="row"><button onclick="app.savePdf()">Download PDF</button><button class="secondary" onclick="app.downloadJson()">Download JSON</button><button class="secondary" onclick="app.clearHistory()">Clear All</button></div></div>
     <div id="history" class="history-list"></div>
   </section>
 </main>
 <script>
-const KEY='vocab-ai-history-v4';
-const AI_FUNCTION_URL='https://us-central1-abhyasam-ai.cloudfunctions.net/generateVocabulary';
-let current=null,mode='Antonyms & Synonyms';
-const $=id=>document.getElementById(id);
-const built={
- diligent:{m:'मेहनती',s:['hardworking','industrious'],a:['lazy','careless'],e:'A diligent aspirant revises vocabulary every day.',h:'एक मेहनती अभ्यर्थी हर दिन शब्दावली दोहराता है।'},
- prudent:{m:'समझदार, विवेकपूर्ण',s:['wise','sensible'],a:['foolish','careless'],e:'A prudent candidate reads every option before marking the answer.',h:'एक समझदार अभ्यर्थी उत्तर चुनने से पहले हर विकल्प पढ़ता है।'},
- benevolent:{m:'दयालु, परोपकारी',s:['kind','generous'],a:['cruel','selfish'],e:'The benevolent teacher helped poor students buy books.',h:'दयालु शिक्षक ने गरीब विद्यार्थियों को किताबें खरीदने में मदद की।'},
- obsolete:{m:'पुराना, अप्रचलित',s:['outdated','old-fashioned'],a:['modern','current'],e:'Many obsolete words are no longer used in daily conversation.',h:'कई अप्रचलित शब्द अब दैनिक बातचीत में उपयोग नहीं होते।'},
- mitigate:{m:'कम करना, घटाना',s:['reduce','lessen'],a:['increase','worsen'],e:'Regular revision can mitigate exam fear before the final test.',h:'नियमित पुनरावृत्ति अंतिम परीक्षा से पहले डर को कम कर सकती है।'},
- abundant:{m:'प्रचुर, बहुत अधिक',s:['plentiful','ample'],a:['scarce','limited'],e:'The library has abundant material for government exam preparation.',h:'पुस्तकालय में सरकारी परीक्षा की तैयारी के लिए प्रचुर सामग्री है।'},
- honest:{m:'ईमानदार',s:['truthful','sincere'],a:['dishonest','false'],e:'An honest officer does not misuse public money.',h:'एक ईमानदार अधिकारी सार्वजनिक धन का दुरुपयोग नहीं करता।'},
- brave:{m:'बहादुर, साहसी',s:['courageous','fearless'],a:['cowardly','fearful'],e:'The brave constable rescued the child from the burning house.',h:'बहादुर सिपाही ने बच्चे को जलते हुए घर से बचाया।'}
-};
-function status(t,c=''){let el=$('status');el.textContent=t;el.className='status '+c}
-function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function uniq(a){return[...new Set((a||[]).map(x=>typeof x==='string'?x:x.word).filter(Boolean).map(x=>x.trim().toLowerCase()).filter(Boolean))]}
-function cleanTwo(arr){let v=uniq(arr).filter(x=>x.length>2&&!/^[a-z]{1,2}$/.test(x)).slice(0,2);return v.length?v:['Not available automatically']}
-async function json(url){let r=await fetch(url);if(!r.ok)throw Error('fetch');return r.json()}
-async function hi(text){try{let j=await json('https://api.mymemory.translated.net/get?q='+encodeURIComponent(text)+'&langpair=en|hi');return (j.responseData&&j.responseData.translatedText||'').trim()}catch(e){return''}}
-async function words(term,rel){try{return uniq(await json('https://api.datamuse.com/words?'+rel+'='+encodeURIComponent(term)+'&max=10'))}catch(e){return[]}}
-function smartFallbackExample(term,pos=''){let t=term.trim(),l=t.toLowerCase();let days={monday:'The exam centre will remain open on Monday for document verification.',tuesday:'The admit card correction window closes on Tuesday.',wednesday:'The commission released the revised answer key on Wednesday.',thursday:'The aspirant attended a mock test on Thursday.',friday:'The application form must be submitted by Friday.',saturday:'The library remains open on Saturday for revision.',sunday:'Many aspirants revise previous year questions on Sunday.'};if(days[l])return days[l];if(mode==='Idioms')return 'The candidate used "'+t+'" correctly while explaining the situation.';if(mode==='One Word Substitution')return 'The examiner asked for one word that accurately expresses "'+t+'".';if(mode==='Spellings')return 'The candidate wrote "'+t+'" correctly in the answer sheet.';if(pos==='verb')return 'Regular practice helps aspirants '+t+' their performance before the exam.';if(pos==='noun')return 'The '+t+' was clearly explained during the revision class.';if(pos==='adjective'||pos==='adverb')return 'The aspirant remained '+t+' while solving a difficult question.';return 'The aspirant used "'+t+'" correctly in an exam-style sentence.'}
-async function example(term){if(term.includes(' '))return smartFallbackExample(term);try{let j=await json('https://api.dictionaryapi.dev/api/v2/entries/en/'+encodeURIComponent(term));let pos='';for(let m of j[0].meanings||[]){pos=pos||m.partOfSpeech||'';for(let d of m.definitions||[]){let ex=(d.example||'').trim();if(ex&&ex.length<160&&!/^["']?\w+["']?\s+means/i.test(ex))return ex}}return smartFallbackExample(term,pos)}catch(e){return smartFallbackExample(term)}}
-function normalizeEntry(entry,term){let syn=cleanTwo(entry.synonyms||entry.synonym||[]),ant=cleanTwo(entry.antonyms||entry.antonym||[]);return{mode,term,meaning:String(entry.meaning||entry.hindiMeaning||'Hindi meaning not found automatically').trim(),synonyms:syn,antonyms:ant,example:String(entry.example||smartFallbackExample(term)).trim(),exampleHindi:String(entry.exampleHindi||entry.example_hindi||'Hindi translation not found automatically').trim(),date:new Date().toLocaleString(),source:entry.source||'AI'}}
-async function aiEntry(term){try{let r=await fetch(AI_FUNCTION_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({term,category:mode})});if(!r.ok)throw Error('ai '+r.status);let j=await r.json();if(!j.ok||!j.entry)throw Error(j.error||'AI response missing');return normalizeEntry(j.entry,term)}catch(e){console.warn('AI generation fallback:',e);return null}}
-function setMode(next){mode=next;document.querySelectorAll('.pill').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));$('term').placeholder='Enter word or phrase'}
-async function fallbackEntry(term){let key=term.toLowerCase();if(built[key]){let b=built[key];return{mode,term,meaning:b.m,synonyms:b.s,antonyms:b.a,example:b.e,exampleHindi:b.h,date:new Date().toLocaleString(),source:'Built-in'}}let[meaning,syn,ant,ex]=await Promise.all([hi(term),words(term,'rel_syn'),words(term,'rel_ant'),example(term)]);let exHi=await hi(ex);return{mode,term,meaning:meaning||'Hindi meaning not found automatically',synonyms:cleanTwo(syn),antonyms:cleanTwo(ant),example:ex,exampleHindi:exHi||'Hindi translation not found automatically',date:new Date().toLocaleString(),source:'Fallback'}}
-async function generateEntry(){let term=$('term').value.trim();if(!term){status('Enter a word or phrase first.','err');return}$('go').disabled=true;status('Generating AI revision entry...','warn');try{let data=await aiEntry(term);let usedFallback=false;if(!data){data=await fallbackEntry(term);usedFallback=true}current=data;renderResult(data);status(usedFallback?'Generated with local fallback. Deploy Firebase Function for AI quality.':'Generated using AI backend. Click Save to add it to revision list.','ok')}catch(e){console.error(e);status('Lookup failed. Try another word or phrase.','err')}finally{$('go').disabled=false}}
-function renderResult(d){$('rMode').textContent=d.mode||mode;$('rTerm').textContent=d.term;$('rMeaning').textContent=d.meaning;$('rSyn').textContent=(d.synonyms||[]).join(', ');$('rAnt').textContent=(d.antonyms||[]).join(', ');$('rEx').textContent=d.example;$('rExHi').textContent=d.exampleHindi}
-function clearEntry(){current=null;$('term').value='';['rMode','rTerm','rMeaning','rSyn','rAnt','rEx','rExHi'].forEach(id=>$(id).textContent='-');status('', '');$('term').focus()}
-function history(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return[]}}
-function setHistory(a){localStorage.setItem(KEY,JSON.stringify(a));renderHistory()}
-function saveCurrent(){if(!current){status('Generate an entry first.','err');return}let a=history().filter(x=>(x.mode+'|'+x.term).toLowerCase()!=(current.mode+'|'+current.term).toLowerCase());a.unshift(current);setHistory(a);status('Saved for revision.','ok')}
-function renderHistory(){let a=history(),el=$('history');if(!a.length){el.innerHTML='<div class="empty">No saved lookups yet. Generate a word and click Save to start your revision list.</div>';return}el.innerHTML=a.map((x,i)=>'<div class="item"><b>'+(i+1)+'. '+esc(x.term)+'</b><div class="meta">'+esc(x.mode)+' | '+esc(x.date||'')+(x.source?' | '+esc(x.source):'')+'</div><div>Hindi: '+esc(x.meaning)+'</div><div>Synonyms: '+esc((x.synonyms||[]).join(', '))+'</div><div>Antonyms: '+esc((x.antonyms||[]).join(', '))+'</div><div>Example: '+esc(x.example)+'</div><div>Example Hindi: '+esc(x.exampleHindi)+'</div></div>').join('')}
-function clearHistory(){if(confirm('Delete all saved vocabulary entries from this browser?'))setHistory([])}
-function downloadJson(){let blob=new Blob([JSON.stringify(history(),null,2)],{type:'application/json'});download(blob,'vocab-ai-history.json')}
-function download(blob,name){let u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.click();URL.revokeObjectURL(u)}
-function savePdf(){let a=history();if(!a.length){status('No saved entries to download.','err');return}let rows=a.map((d,i)=>`<section><h2>${i+1}. ${esc(d.term)}</h2><p><b>Section:</b> ${esc(d.mode)}</p><p><b>Hindi Meaning:</b> ${esc(d.meaning)}</p><p><b>Synonyms:</b> ${esc((d.synonyms||[]).join(', '))}</p><p><b>Antonyms:</b> ${esc((d.antonyms||[]).join(', '))}</p><p><b>Example:</b> ${esc(d.example)}</p><p><b>Example Hindi:</b> ${esc(d.exampleHindi)}</p></section>`).join('');let w=window.open('','_blank');w.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>vocab.ai Revision PDF</title><style>body{font-family:Arial,Noto Sans Devanagari,Nirmala UI,sans-serif;margin:28px;color:#111}h1{margin:0 0 4px}small{color:#555}section{break-inside:avoid;border-bottom:1px solid #ddd;padding:12px 0}h2{font-size:18px;margin:0 0 8px}p{margin:5px 0}@media print{button{display:none}}</style></head><body><button onclick="window.print()">Save as PDF</button><h1>Vocabulary Revision - vocab.ai</h1><small>Saved entries from your browser</small>${rows}<script>setTimeout(()=>window.print(),400)<\/script></body></html>`);w.document.close();status('PDF window opened. Choose Save as PDF.','ok')}
-$('term').addEventListener('keydown',e=>{if(e.key==='Enter')generateEntry()});renderHistory();
+const app = (() => {
+  // === DOM CACHING ===
+  const DOM = {
+    term: document.getElementById('term'),
+    go: document.getElementById('go'),
+    status: document.getElementById('status'),
+    rMode: document.getElementById('rMode'),
+    rTerm: document.getElementById('rTerm'),
+    rMeaning: document.getElementById('rMeaning'),
+    rSyn: document.getElementById('rSyn'),
+    rAnt: document.getElementById('rAnt'),
+    rEx: document.getElementById('rEx'),
+    rExHi: document.getElementById('rExHi'),
+    history: document.getElementById('history'),
+    pills: document.querySelectorAll('.pill')
+  };
+
+  const KEY = 'vocab-ai-history-v4';
+  const AI_FUNCTION_URL = 'https://us-central1-abhyasam-ai.cloudfunctions.net/generateVocabulary';
+  const CACHE_TTL = 24 * 60 * 60 * 1000; // 24 hours
+  
+  let current = null;
+  let mode = 'Antonyms & Synonyms';
+  let isGenerating = false; // Debounce flag
+  const localCache = {}; // In-memory cache for this session
+
+  // Hardcoded fallback data
+  const built = {
+    diligent: { m: 'मेहनती', s: ['hardworking', 'industrious'], a: ['lazy', 'careless'], e: 'A diligent aspirant revises vocabulary every day.', h: 'एक मेहनती अभ्यर्थी हर दिन शब्दावली का संशोधन करता है।' },
+    prudent: { m: 'समझदार, विवेकपूर्ण', s: ['wise', 'sensible'], a: ['foolish', 'careless'], e: 'A prudent candidate reads every option before marking the answer.', h: 'एक समझदार अभ्यर्थी उत्तर दिए जाने से पहले हर विकल्प को पढ़ता है।' },
+    benevolent: { m: 'दयालु, परोपकारी', s: ['kind', 'generous'], a: ['cruel', 'selfish'], e: 'The benevolent teacher helped poor students buy books.', h: 'दयालु शिक्षक ने गरीब छात्रों को किताबें खरीदने में मदद की।' },
+    obsolete: { m: 'पुराना, अप्रचलित', s: ['outdated', 'old-fashioned'], a: ['modern', 'current'], e: 'Many obsolete words are no longer used in daily conversation.', h: 'कई अप्रचलित शब्द दैनिक बातचीत में अब उपयोग नहीं किए जाते हैं।' },
+    mitigate: { m: 'कम करना, घटाना', s: ['reduce', 'lessen'], a: ['increase', 'worsen'], e: 'Regular revision can mitigate exam fear before the final test.', h: 'नियमित संशोधन अंतिम परीक्षा से पहले परीक्षा के भय को कम कर सकता है।' },
+    abundant: { m: 'प्रचुर, बहुत अधिक', s: ['plentiful', 'ample'], a: ['scarce', 'limited'], e: 'The library has abundant material for government exam preparation.', h: 'पुस्तकालय में सरकारी परीक्षा की तैयारी के लिए बहुत सामग्री है।' },
+    honest: { m: 'ईमानदार', s: ['truthful', 'sincere'], a: ['dishonest', 'false'], e: 'An honest officer does not misuse public money.', h: 'एक ईमानदार अधिकारी सार्वजनिक धन का दुरुपयोग नहीं करता है।' },
+    brave: { m: 'बहादुर, साहसी', s: ['courageous', 'fearless'], a: ['cowardly', 'fearful'], e: 'The brave constable rescued the child from the burning house.', h: 'बहादुर सिपाही ने जलते हुए घर से बच्चे को बचाया।' }
+  };
+
+  const esc = (s) => String(s || '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+
+  const uniq = (a) => [...new Set((a || []).map(x => typeof x === 'string' ? x : x.word).filter(Boolean).map(x => x.trim().toLowerCase()).filter(Boolean))];
+
+  const cleanTwo = (arr) => {
+    let v = uniq(arr).filter(x => x.length > 2 && !/^[a-z]{1,2}$/.test(x)).slice(0, 2);
+    return v.length ? v : ['Not available automatically'];
+  };
+
+  const json = async (url) => {
+    let r = await fetch(url);
+    if (!r.ok) throw Error('fetch');
+    return r.json();
+  };
+
+  const hi = async (text) => {
+    try {
+      let j = await json('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=en|hi');
+      return (j.responseData && j.responseData.translatedText || '').trim();
+    } catch (e) {
+      return 'Hindi translation not available';
+    }
+  };
+
+  const words = async (term, rel) => {
+    try {
+      return uniq(await json('https://api.datamuse.com/words?' + rel + '=' + encodeURIComponent(term) + '&max=10'));
+    } catch (e) {
+      return [];
+    }
+  };
+
+  const smartFallbackExample = (term, pos = '') => {
+    let t = term.trim(), l = t.toLowerCase();
+    let days = {
+      monday: 'The exam centre will remain open on Monday for document verification.',
+      tuesday: 'The admit card correction window opens on Tuesday morning.',
+      wednesday: 'The deadline for fee submission is Wednesday of next week.',
+      thursday: 'Results will be declared on Thursday evening.',
+      friday: 'The interview schedule was announced on Friday last week.',
+      saturday: 'Many candidates prefer to study on Saturday and Sunday.',
+      sunday: 'Sunday is a good day to revise all weekly lessons.'
+    };
+    if (days[l]) return days[l];
+    if (pos === 'n') return `${t} is an important concept in government exams.`;
+    if (pos === 'v') return `Candidates who ${t} regularly improve their scores.`;
+    if (pos === 'a') return `A ${t} approach helps in competitive exam preparation.`;
+    return `${t} is used in natural English sentences.`;
+  };
+
+  const example = async (term) => {
+    if (term.includes(' ')) return smartFallbackExample(term);
+    try {
+      let j = await json('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(term));
+      let pos = '';
+      for (let e of j) for (let m of e.meanings || []) { pos = m.partOfSpeech || ''; if (pos) break; }
+      let ex = (j[0]?.meanings?.[0]?.definitions?.[0]?.example || '').trim();
+      return ex || smartFallbackExample(term, pos);
+    } catch (e) {
+      return smartFallbackExample(term);
+    }
+  };
+
+  const normalizeEntry = (entry, term) => {
+    let syn = cleanTwo(entry.synonyms || entry.synonym || []),
+      ant = cleanTwo(entry.antonyms || entry.antonym || []);
+    return {
+      mode,
+      term,
+      meaning: String(entry.meaning || entry.hindiMeaning || 'Meaning not available').trim(),
+      synonyms: syn,
+      antonyms: ant,
+      example: String(entry.example || '').trim(),
+      exampleHindi: String(entry.exampleHindi || entry.hindiExample || '').trim(),
+      date: new Date().toISOString().split('T')[0]
+    };
+  };
+
+  const aiEntry = async (term) => {
+    try {
+      let r = await fetch(AI_FUNCTION_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ term, category: mode })
+      });
+      if (!r.ok) throw Error('ai call failed');
+      let j = await r.json();
+      if (!j.ok) throw Error(j.error || 'Unknown error');
+      return normalizeEntry(j.entry, term);
+    } catch (e) {
+      console.warn('AI generation failed:', e);
+      throw e;
+    }
+  };
+
+  const fallbackEntry = async (term) => {
+    let key = term.toLowerCase();
+    if (built[key]) {
+      let b = built[key];
+      return {
+        mode,
+        term,
+        meaning: b.m,
+        synonyms: b.s,
+        antonyms: b.a,
+        example: b.e,
+        exampleHindi: b.h,
+        date: new Date().toISOString().split('T')[0]
+      };
+    }
+    // Fallback: fetch from multiple sources in parallel
+    const [syn, ant, ex] = await Promise.all([
+      words(term, 'ml'),
+      words(term, 'sl'),
+      example(term)
+    ]);
+    const meaning = await hi(term);
+    const exHi = ex !== smartFallbackExample(term) ? await hi(ex) : '';
+    return {
+      mode,
+      term,
+      meaning,
+      synonyms: cleanTwo(syn),
+      antonyms: cleanTwo(ant),
+      example: ex,
+      exampleHindi: exHi,
+      date: new Date().toISOString().split('T')[0]
+    };
+  };
+
+  const status = (t, c = '') => {
+    DOM.status.textContent = t;
+    DOM.status.className = 'status ' + c;
+  };
+
+  const setMode = (next) => {
+    mode = next;
+    DOM.pills.forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+    DOM.term.placeholder = 'Enter word or phrase';
+  };
+
+  const generateEntry = async () => {
+    // Debounce: prevent concurrent requests
+    if (isGenerating) {
+      status('Already generating... please wait.', 'warn');
+      return;
+    }
+
+    let term = DOM.term.value.trim();
+    if (!term) {
+      status('Enter a word or phrase first.', 'err');
+      return;
+    }
+
+    // Check local cache first
+    const cacheKey = `${mode}|${term}`.toLowerCase();
+    if (localCache[cacheKey]) {
+      current = localCache[cacheKey];
+      renderResult(current);
+      status('Loaded from cache', 'ok');
+      return;
+    }
+
+    isGenerating = true;
+    DOM.go.disabled = true;
+
+    try {
+      status('Generating AI revision entry...', 'warn');
+      let e;
+      try {
+        e = await aiEntry(term);
+      } catch (_) {
+        status('AI unavailable, using fallback...', 'warn');
+        e = await fallbackEntry(term);
+      }
+      current = e;
+      localCache[cacheKey] = e; // Cache locally
+      renderResult(e);
+      status('✓ Entry generated', 'ok');
+    } catch (err) {
+      console.error(err);
+      status('Failed to generate entry. Check your network.', 'err');
+    } finally {
+      isGenerating = false;
+      DOM.go.disabled = false;
+    }
+  };
+
+  const renderResult = (d) => {
+    DOM.rMode.textContent = d.mode || mode;
+    DOM.rTerm.textContent = d.term;
+    DOM.rMeaning.textContent = d.meaning;
+    DOM.rSyn.textContent = (d.synonyms || []).join(', ');
+    DOM.rAnt.textContent = (d.antonyms || []).join(', ');
+    DOM.rEx.textContent = d.example;
+    DOM.rExHi.textContent = d.exampleHindi;
+  };
+
+  const clearEntry = () => {
+    current = null;
+    DOM.term.value = '';
+    ['rMode', 'rTerm', 'rMeaning', 'rSyn', 'rAnt', 'rEx', 'rExHi'].forEach(id => DOM[id] ? DOM[id].textContent = '-' : null);
+    status('', '');
+    DOM.term.focus();
+  };
+
+  const history = () => {
+    try {
+      return JSON.parse(localStorage.getItem(KEY) || '[]');
+    } catch (e) {
+      return [];
+    }
+  };
+
+  const setHistory = (a) => {
+    localStorage.setItem(KEY, JSON.stringify(a));
+    renderHistory();
+  };
+
+  const saveCurrent = () => {
+    if (!current) {
+      status('Generate an entry first.', 'err');
+      return;
+    }
+    let a = history().filter(x => (x.mode + '|' + x.term).toLowerCase() !== (current.mode + '|' + current.term).toLowerCase());
+    a.unshift(current);
+    setHistory(a.slice(0, 500)); // Limit to 500 entries
+    status('✓ Saved to revision list', 'ok');
+  };
+
+  const renderHistory = () => {
+    let a = history(), el = DOM.history;
+    if (!a.length) {
+      el.innerHTML = '<div class="empty">No saved lookups yet. Generate a word and click Save to start your revision list.</div>';
+      return;
+    }
+    // Efficient rendering: build fragment instead of concatenating
+    const frag = document.createDocumentFragment();
+    a.forEach((d, i) => {
+      const div = document.createElement('div');
+      div.className = 'history-item';
+      div.innerHTML = `
+        <div>
+          <div class="history-term">${esc(d.term)}</div>
+          <div class="history-meta">${esc(d.mode)} • ${d.date || 'N/A'}</div>
+          <div class="history-meta">${esc(d.meaning)}</div>
+        </div>
+        <button class="history-btn" onclick="app.deleteEntry(${i})">Delete</button>
+      `;
+      frag.appendChild(div);
+    });
+    el.innerHTML = '';
+    el.appendChild(frag);
+  };
+
+  const deleteEntry = (index) => {
+    let a = history();
+    a.splice(index, 1);
+    setHistory(a);
+  };
+
+  const clearHistory = () => {
+    if (confirm('Delete all saved vocabulary entries from this browser?')) setHistory([]);
+  };
+
+  const downloadJson = () => {
+    let blob = new Blob([JSON.stringify(history(), null, 2)], { type: 'application/json' });
+    download(blob, 'vocab-ai-history.json');
+  };
+
+  const download = (blob, name) => {
+    let u = URL.createObjectURL(blob), a = document.createElement('a');
+    a.href = u;
+    a.download = name;
+    a.click();
+    URL.revokeObjectURL(u);
+  };
+
+  const savePdf = () => {
+    let a = history();
+    if (!a.length) {
+      status('No saved entries to download.', 'err');
+      return;
+    }
+    let rows = a.map((d, i) => `<section><h2>${i + 1}. ${esc(d.term)}</h2><p><b>Section:</b> ${esc(d.mode)}</p><p><b>Meaning:</b> ${esc(d.meaning)}</p><p><b>Synonyms:</b> ${esc((d.synonyms || []).join(', '))}</p><p><b>Antonyms:</b> ${esc((d.antonyms || []).join(', '))}</p><p><b>Example:</b> ${esc(d.example)}</p><p><b>Hindi:</b> ${esc(d.exampleHindi)}</p></section>`).join('');
+    let html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>vocab.ai Revision</title><style>body{font-family:Arial;line-height:1.6;margin:20px;color:#333}h2{color:#2563eb;page-break-inside:avoid}section{page-break-inside:avoid;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid #eee}</style></head><body><h1>vocab.ai Revision List</h1><p>Generated on ${new Date().toLocaleDateString()}</p>${rows}</body></html>`;
+    let blob = new Blob([html], { type: 'text/html' });
+    download(blob, 'vocab-ai-revision.html');
+  };
+
+  // Initialize
+  DOM.term.addEventListener('keydown', e => {
+    if (e.key === 'Enter') generateEntry();
+  });
+  renderHistory();
+
+  // Public API
+  return {
+    generateEntry,
+    saveCurrent,
+    clearEntry,
+    setMode,
+    savePdf,
+    downloadJson,
+    clearHistory,
+    deleteEntry
+  };
+})();
 </script>
 </body>
 </html>
