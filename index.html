@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#2563eb">
 <title>vocab.ai - Vocabulary Revision for Government Exams</title>
 <style>
-:root{--bg:#f6f8ff;--bg-dark:#1a1a2e;--card:#fff;--card-dark:#2d2d44;--text:#111827;--text-dark:#f0f0f0;--muted:#5a6b7d;--muted-dark:#b0b0c0;--line:#e5e7eb;--line-dark:#3d3d5c;--blue:#2563eb;--green:#067647;--red:#b42318;--amber:#b54708}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;transition:background 200ms,color 200ms}body.dark-mode{--bg:var(--bg-dark);--card:var(--card-dark);--text:var(--text-dark);--muted:var(--muted-dark);--line:var(--line-dark)}@media(prefers-color-scheme:dark){body{--bg:var(--bg-dark);--card:var(--card-dark);--text:var(--text-dark);--muted:var(--muted-dark);--line:var(--line-dark)}}.wrap{max-width:900px;margin:0 auto;padding:20px}.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:20px;flex-wrap:wrap}.brand{font-size:24px;font-weight:700;color:var(--blue)}.brand span{color:var(--text)}.nav-actions{display:flex;gap:10px;flex-wrap:wrap}.nav-controls{display:flex;gap:10px;align-items:center}.theme-toggle{background:transparent;border:1px solid var(--line);color:var(--text);padding:6px 10px;font-size:16px;cursor:pointer;border-radius:6px;transition:all 150ms;user-select:none}.theme-toggle:hover{border-color:var(--blue)}.pill{padding:8px 16px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;cursor:pointer;font-size:14px;font-weight:500;transition:all 150ms ease;user-select:none}.pill:hover{border-color:var(--blue);background:rgba(37,99,235,0.05)}.pill.active{background:var(--blue);color:white;border-color:var(--blue)}.pill:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.1)}@media(max-width:600px){.pill{font-size:12px;padding:6px 12px}}.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;margin-bottom:20px;box-shadow:0 1px 2px rgba(0,0,0,0.05)}.stack>div{margin-bottom:20px}.stack>div:last-child{margin-bottom:0}label{display:block;margin-bottom:8px;font-weight:600;color:var(--text)}input[type="text"],input[type="search"]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;font-size:14px;font-family:inherit;transition:all 150ms ease;background:var(--card);color:var(--text)}input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.1)}input::placeholder{color:var(--muted)}.ai-note{margin:8px 0 0;font-size:12px;color:var(--muted)}.row{display:flex;gap:10px;flex-wrap:wrap}@media(max-width:480px){.row{flex-direction:column}.row button{width:100%}}button{padding:10px 16px;border:1px solid var(--blue);background:var(--blue);color:white;border-radius:6px;cursor:pointer;font-size:14px;font-weight:500;transition:all 150ms ease;font-family:inherit;user-select:none}button:hover:not(:disabled){background:#1d4ed8;border-color:#1d4ed8}button:focus{outline:none;box-shadow:0 0 0 3px rgba(37,99,235,0.1)}button:disabled{opacity:0.6;cursor:not-allowed}button.secondary{background:transparent;color:var(--blue);border-color:var(--blue)}button.secondary:hover:not(:disabled){background:rgba(37,99,235,0.1)}.status{padding:10px 12px;border-radius:6px;font-size:14px;margin-top:10px;transition:opacity 300ms ease;min-height:20px}.status.ok{background:rgba(6,118,71,0.1);color:var(--green);border:1px solid rgba(6,118,71,0.3)}.status.err{background:rgba(180,35,24,0.1);color:var(--red);border:1px solid rgba(180,35,24,0.3)}.status.warn{background:rgba(181,71,8,0.1);color:var(--amber);border:1px solid rgba(181,71,8,0.3)}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}@media(max-width:600px){.results{grid-template-columns:1fr}}.box{background:rgba(37,99,235,0.03);border:1px solid var(--line);border-radius:6px;padding:12px;position:relative}.box-title{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;margin-bottom:6px;letter-spacing:0.5px}.box-value{font-size:14px;color:var(--text);line-height:1.6;word-break:break-word;margin:0}.copy-btn{position:absolute;top:8px;right:8px;padding:4px 8px;font-size:11px;background:rgba(37,99,235,0.1);border:none;color:var(--blue);border-radius:4px;cursor:pointer;opacity:0;transition:opacity 150ms;user-select:none}@media(hover:hover){.box:hover .copy-btn{opacity:1}}.meaning{font-style:italic}.history{margin-top:40px}.history-controls{display:flex;gap:10px;margin-bottom:15px;flex-wrap:wrap}#filter-history{flex:1;min-width:200px}@media(max-width:600px){.history-controls{flex-direction:column}#filter-history{width:100%}}.history-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:10px}@media(max-width:600px){.history-head{flex-direction:column;align-items:flex-start}}.history-head h2{margin:0;color:var(--text);font-size:18px}.hint{margin:4px 0 0;font-size:12px;color:var(--muted)}.stats{padding:10px;background:rgba(37,99,235,0.05);border-radius:6px;font-size:12px;color:var(--muted);margin-bottom:10px}.history-list{display:flex;flex-direction:column;gap:10px;max-height:400px;overflow-y:auto}.history-item{display:flex;justify-content:space-between;align-items:center;padding:12px;background:rgba(37,99,235,0.02);border:1px solid var(--line);border-radius:6px;transition:all 150ms ease}@media(max-width:600px){.history-item{flex-direction:column;align-items:flex-start;gap:10px}}.history-item:hover{background:rgba(37,99,235,0.05);border-color:var(--blue)}.history-item>div{flex:1}.history-term{font-weight:600;color:var(--text);margin-bottom:6px}.history-meta{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}.history-btn{padding:6px 12px;font-size:12px;background:transparent;color:var(--red);border-color:var(--red)}@media(max-width:600px){.history-btn{width:100%}}.empty{padding:20px;text-align:center;color:var(--muted);background:rgba(37,99,235,0.03);border-radius:6px;border:1px dashed var(--line)}.empty p{margin:8px 0}.empty p:first-child{font-size:24px;margin-top:0}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(37,99,235,0.3);border-top-color:var(--blue);border-radius:50%;animation:spin 0.8s linear infinite;margin-right:6px;vertical-align:middle}.kbd{display:inline-block;padding:2px 6px;background:var(--line);border-radius:3px;font-size:11px;font-family:monospace;color:var(--text)}
+:root{--bg:#f6f8ff;--bg-dark:#1a1a2e;--card:#fff;--card-dark:#2d2d44;--text:#111827;--text-dark:#f0f0f0;--muted:#5a6b7d;--muted-dark:#b0b0c0;--line:#e5e7eb;--line-dark:#3d3d5c;--blue:#2563eb;--gre[...]
 </style>
 </head>
 <body>
@@ -40,12 +40,12 @@
   <section class="card">
     <div class="results">
       <div class="box"><div class="box-title">Section</div><div class="box-value" id="rMode">-</div><button class="copy-btn" onclick="app.copyToClipboard('rMode')" title="Copy">Copy</button></div>
-      <div class="box"><div class="box-title">Word / Phrase</div><div class="box-value" id="rTerm">-</div><button class="copy-btn" onclick="app.copyToClipboard('rTerm')" title="Copy">Copy</button></div>
-      <div class="box"><div class="box-title">Meaning</div><div class="box-value meaning" id="rMeaning">-</div><button class="copy-btn" onclick="app.copyToClipboard('rMeaning')" title="Copy">Copy</button></div>
+      <div class="box"><div class="box-title">Word / Phrase</div><div class="box-value" id="rTerm">-</div><button class="copy-btn" onclick="app.copyToClipboard('rTerm')" title="Copy">Copy</button>[...]
+      <div class="box"><div class="box-title">Meaning</div><div class="box-value meaning" id="rMeaning">-</div><button class="copy-btn" onclick="app.copyToClipboard('rMeaning')" title="Copy">Copy<[...]
       <div class="box"><div class="box-title">Synonyms</div><div class="box-value" id="rSyn">-</div><button class="copy-btn" onclick="app.copyToClipboard('rSyn')" title="Copy">Copy</button></div>
       <div class="box"><div class="box-title">Antonyms</div><div class="box-value" id="rAnt">-</div><button class="copy-btn" onclick="app.copyToClipboard('rAnt')" title="Copy">Copy</button></div>
       <div class="box"><div class="box-title">Example</div><div class="box-value" id="rEx">-</div><button class="copy-btn" onclick="app.copyToClipboard('rEx')" title="Copy">Copy</button></div>
-      <div class="box"><div class="box-title">Example Hindi</div><div class="box-value" id="rExHi">-</div><button class="copy-btn" onclick="app.copyToClipboard('rExHi')" title="Copy">Copy</button></div>
+      <div class="box"><div class="box-title">Example Hindi</div><div class="box-value" id="rExHi">-</div><button class="copy-btn" onclick="app.copyToClipboard('rExHi')" title="Copy">Copy</button>[...]
     </div>
   </section>
   <section class="card history">
@@ -108,14 +108,14 @@ const app = (() => {
 
   // Fallback vocabulary data
   const FALLBACK_VOCAB = {
-    diligent: { m: 'मेहनती', s: ['hardworking', 'industrious'], a: ['lazy', 'careless'], e: 'A diligent aspirant revises vocabulary every day.', h: 'एक मेहनती अभ्यर्थी हर दिन शब्दावली को दोहराता है।' },
-    prudent: { m: 'समझदार, विवेकपूर्ण', s: ['wise', 'sensible'], a: ['foolish', 'careless'], e: 'A prudent candidate reads every option before marking the answer.', h: 'एक विवेकपूर्ण उम्मीदवार उत्तर चिह्नित करने से पहले हर विकल्प पढ़ता है।' },
-    benevolent: { m: 'दयालु, परोपकारी', s: ['kind', 'generous'], a: ['cruel', 'selfish'], e: 'The benevolent teacher helped poor students buy books.', h: 'दयालु शिक्षक ने गरीब छात्रों को किताबें खरीदने में मदद की।' },
-    obsolete: { m: 'पुराना, अप्रचलित', s: ['outdated', 'old-fashioned'], a: ['modern', 'current'], e: 'Many obsolete words are no longer used in daily conversation.', h: 'कई अप्रचलित शब्दों का अब दैनिक बातचीत में उपयोग नहीं किया जाता है।' },
-    mitigate: { m: 'कम करना, घटाना', s: ['reduce', 'lessen'], a: ['increase', 'worsen'], e: 'Regular revision can mitigate exam fear before the final test.', h: 'नियमित संशोधन अंतिम परीक्षा से पहले परीक्षा भय को कम कर सकता है।' },
-    abundant: { m: 'प्रचुर, बहुत अधिक', s: ['plentiful', 'ample'], a: ['scarce', 'limited'], e: 'The library has abundant material for government exam preparation.', h: 'पुस्तकालय में सरकारी परीक्षा की तैयारी के लिए भरपूर सामग्री है।' },
-    honest: { m: 'ईमानदार', s: ['truthful', 'sincere'], a: ['dishonest', 'false'], e: 'An honest officer does not misuse public money.', h: 'एक ईमानदार अधिकारी सार्वजनिक धन का दुरुपयोग नहीं करता है।' },
-    brave: { m: 'बहादुर, साहसी', s: ['courageous', 'fearless'], a: ['cowardly', 'fearful'], e: 'The brave constable rescued the child from the burning house.', h: 'बहादुर पुलिसकर्मी ने जलते हुए घर से बच्चे को बचाया।' }
+    diligent: { m: 'मेहनती', s: ['hardworking', 'industrious'], a: ['lazy', 'careless'], e: 'A diligent aspirant revises vocabulary every day.', h: 'एक मेहनती अभ[[...]
+    prudent: { m: 'समझदार, विवेकपूर्ण', s: ['wise', 'sensible'], a: ['foolish', 'careless'], e: 'A prudent candidate reads every option before marking the answer.'[...]
+    benevolent: { m: 'दयालु, परोपकारी', s: ['kind', 'generous'], a: ['cruel', 'selfish'], e: 'The benevolent teacher helped poor students buy books.', h: 'दयाल[[...]
+    obsolete: { m: 'पुराना, अप्रचलित', s: ['outdated', 'old-fashioned'], a: ['modern', 'current'], e: 'Many obsolete words are no longer used in daily conversation.', [...]
+    mitigate: { m: 'कम करना, घटाना', s: ['reduce', 'lessen'], a: ['increase', 'worsen'], e: 'Regular revision can mitigate exam fear before the final test.', h: 'निय[[...]
+    abundant: { m: 'प्रचुर, बहुत अधिक', s: ['plentiful', 'ample'], a: ['scarce', 'limited'], e: 'The library has abundant material for government exam preparation.', h[...]
+    honest: { m: 'ईमानदार', s: ['truthful', 'sincere'], a: ['dishonest', 'false'], e: 'An honest officer does not misuse public money.', h: 'एक ईमानदार अधि[[...]
+    brave: { m: 'बहादुर, साहसी', s: ['courageous', 'fearless'], a: ['cowardly', 'fearful'], e: 'The brave constable rescued the child from the burning house.', h: 'बहा[...]
   };
 
   // Utility: HTML Escape
@@ -328,10 +328,11 @@ const app = (() => {
 
   // Validation: Check term validity
   const validateTerm = (term) => {
-    if (!term) return { valid: false, msg: 'Enter a word or phrase.' };
-    if (term.length > CONSTANTS.MAX_TERM_LENGTH) return { valid: false, msg: `Max ${CONSTANTS.MAX_TERM_LENGTH} characters.` };
-    if (/^\d+$/.test(term)) return { valid: false, msg: 'Enter a valid word, not just numbers.' };
-    if (/[<>{}[\]\\"]/.test(term)) return { valid: false, msg: 'Remove special characters.' };
+    const trimmed = term.trim();
+    if (!trimmed || trimmed.length === 0) return { valid: false, msg: 'Enter a word or phrase.' };
+    if (trimmed.length > CONSTANTS.MAX_TERM_LENGTH) return { valid: false, msg: `Max ${CONSTANTS.MAX_TERM_LENGTH} characters.` };
+    if (/^\d+$/.test(trimmed)) return { valid: false, msg: 'Enter a valid word, not just numbers.' };
+    if (/[<>{}[\]\\"]/.test(trimmed)) return { valid: false, msg: 'Remove special characters.' };
     return { valid: true };
   };
 
@@ -406,12 +407,12 @@ const app = (() => {
   // UI: Render result
   const renderResult = (entry) => {
     DOM.rMode.textContent = entry.mode || state.mode;
-    DOM.rTerm.textContent = entry.term;
-    DOM.rMeaning.textContent = entry.meaning;
-    DOM.rSyn.textContent = (entry.synonyms || []).join(', ');
-    DOM.rAnt.textContent = (entry.antonyms || []).join(', ');
-    DOM.rEx.textContent = entry.example;
-    DOM.rExHi.textContent = entry.exampleHindi;
+    DOM.rTerm.textContent = escapeHtml(entry.term);
+    DOM.rMeaning.textContent = escapeHtml(entry.meaning);
+    DOM.rSyn.textContent = (entry.synonyms || []).map(s => escapeHtml(s)).join(', ');
+    DOM.rAnt.textContent = (entry.antonyms || []).map(a => escapeHtml(a)).join(', ');
+    DOM.rEx.textContent = escapeHtml(entry.example);
+    DOM.rExHi.textContent = escapeHtml(entry.exampleHindi);
   };
 
   // UI: Clear entry
@@ -559,7 +560,7 @@ const app = (() => {
     }
     const headers = 'Term,Category,Meaning,Synonyms,Antonyms,Example,Example Hindi,Date\n';
     const rows = history.map(e =>
-      `"${e.term.replace(/"/g, '""')}","${e.mode}","${e.meaning.replace(/"/g, '""')}","${(e.synonyms || []).join('; ')}","${(e.antonyms || []).join('; ')}","${e.example.replace(/"/g, '""')}","${e.exampleHindi.replace(/"/g, '""')}","${e.date}"`
+      `"${e.term.replace(/"/g, '""')}","${e.mode}","${e.meaning.replace(/"/g, '""')}","${(e.synonyms || []).join('; ')}","${(e.antonyms || []).join('; ')}","${e.example.replace(/"/g, '""')}","${e[...]
     ).join('\n');
     const blob = new Blob([headers + rows], { type: 'text/csv;charset=utf-8;' });
     downloadFile(blob, 'vocab-ai-history.csv');
@@ -586,7 +587,7 @@ const app = (() => {
       </section>
     `).join('');
 
-    const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>vocab.ai</title><style>body{font-family:Arial,sans-serif;line-height:1.6;margin:20px;color:#333}section{page-break-inside:avoid;margin:20px 0;padding:15px;border-left:4px solid #2563eb;background:#f9fafb}h2{color:#2563eb;margin-top:0}p{margin:6px 0}</style></head><body><h1>vocab.ai Revision List</h1><p>Generated: ${new Date().toLocaleString()}</p><p style="color:#999">Total: ${history.length} words</p>${rows}</body></html>`;
+    const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>vocab.ai</title><style>body{font-family:Arial,sans-serif;line-height:1.6;margin:20px;color:#333}section{page-break-inside[...]
     const blob = new Blob([html], { type: 'text/html' });
     downloadFile(blob, 'vocab-ai-revision.html');
     showStatus('✓ Downloaded as PDF', 'ok');
