@@ -297,7 +297,7 @@ const app = (() => {
     // Parallel API calls
     const [synonyms, antonyms, example] = await Promise.all([
       getRelatedWords(term, 'ml'),
-      getRelatedWords(term, 'sl'),
+      getRelatedWords(term, 'rel_ant'),
       getExample(term)
     ]);
 
@@ -498,9 +498,7 @@ const app = (() => {
     history.forEach(entry => {
       const div = document.createElement('div');
       div.className = 'history-item';
-      const encodedTerm = btoa(escapeHtml(entry.term));
-      const encodedMode = btoa(escapeHtml(entry.mode));
-      
+
       const termDiv = document.createElement('div');
       const termText = document.createElement('div');
       termText.className = 'history-term';
@@ -521,7 +519,7 @@ const app = (() => {
       const btn = document.createElement('button');
       btn.className = 'history-btn';
       btn.textContent = 'Delete';
-      btn.onclick = () => app.deleteEntry(encodedTerm, encodedMode);
+      btn.onclick = () => app.deleteEntry(entry.term, entry.mode);
       
       div.appendChild(termDiv);
       div.appendChild(btn);
@@ -545,10 +543,8 @@ const app = (() => {
   };
 
   // Action: Delete entry
-  const deleteEntry = (encodedTerm, encodedMode) => {
+  const deleteEntry = (term, mode) => {
     try {
-      const term = atob(encodedTerm);
-      const mode = atob(encodedMode);
       const history = getHistory().filter(x => !(x.term === term && x.mode === mode));
       saveHistory(history);
       showStatus('✓ Deleted', 'ok');
