@@ -1,0 +1,60 @@
+name: Deploy Firebase Functions
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-functions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Enable required Google Cloud APIs
+        run: |
+          set -e
+          gcloud services enable \
+            secretmanager.googleapis.com \
+            cloudfunctions.googleapis.com \
+            cloudbuild.googleapis.com \
+            artifactregistry.googleapis.com \
+            run.googleapis.com \
+            eventarc.googleapis.com \
+            firebase.googleapis.com \
+            --project=abhyasam-ai \
+            --quiet
+
+      - name: Create or update OpenAI secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set -e
+          test -n "$OPENAI_API_KEY"
+          if gcloud secrets describe OPENAI_API_KEY --project=abhyasam-ai >/dev/null 2>&1; then
+            printf "%s" "$OPENAI_API_KEY" | gcloud secrets versions add OPENAI_API_KEY --data-file=- --project=abhyasam-ai
+          else
+            printf "%s" "$OPENAI_API_KEY" | gcloud secrets create OPENAI_API_KEY --replication-policy="automatic" --data-file=- --project=abhyasam-ai
+          fi
+
+      - name: Install function dependencies
+        working-directory: functions
+        run: npm install
+
+      - name: Deploy Firebase Functions
+        run: npx firebase-tools deploy --only functions --project abhyasam-ai --non-interactive
